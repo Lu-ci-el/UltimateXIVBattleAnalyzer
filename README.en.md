@@ -1,6 +1,6 @@
 # UltimateXIVBattleAnalyzer
 
-[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.7) · [User guide](docs/USER_GUIDE.en.md)
+[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.8) · [User guide](docs/USER_GUIDE.en.md)
 
 A Windows app for FFXIV replay DAT files. Inspect battles and party composition, extract a battle, anonymize a replay for sharing, change its recorder, and find the ACT logs that match a recording.
 
@@ -8,7 +8,7 @@ A Windows app for FFXIV replay DAT files. Inspect battles and party composition,
 
 ## Getting started
 
-1. Download the application ZIP from the [release page](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.7).
+1. Download the application ZIP from the [release page](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.8).
 2. Extract the entire folder and run `UltimateXIVBattleAnalyzer.exe`.
 3. Choose **Load DAT** and select a recording.
 4. Inspect the battle list, choose the operation you need, and save to a separate file.

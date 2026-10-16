@@ -2,6 +2,10 @@
 
 [Home](../README.en.md) · [User guide](USER_GUIDE.en.md) · [日本語](CHANGELOG.ja.md)
 
+## 3.7.5.8
+
+Fixed battle extraction failures caused by missing player state when participants despawned or spawned again before the selected battle.
+
 ## 3.7.5.7
 
 Fixed batch conversion button visibility and dictionary selection for each conversion operation. Separate remembered folders, subfolder processing, and skip reasons remain available.
