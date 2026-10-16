@@ -1,6 +1,6 @@
 # UltimateXIVBattleAnalyzer
 
-[Download 3.7.4.3](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.4.3) · [Release notes](docs/CHANGELOG.en.md)
+[Download 3.7.4.5](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.4.5) · [Release notes](docs/CHANGELOG.en.md)
 
 [日本語](README.md) · [Illustrated guide](docs/USER_GUIDE.en.md) · [Support development](docs/SUPPORT.en.md)
 

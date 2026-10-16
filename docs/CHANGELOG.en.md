@@ -1,5 +1,9 @@
 # Release notes
 
+## 3.7.4.5
+
+- Fixed issues with settings, save locations, and dictionary loading.
+
 ## 3.7.4.3
 
 - DATs retain UXBA processing history.  
