@@ -1,5 +1,7 @@
 # UltimateXIVBattleAnalyzer
 
+For English instructions, please see the [English guide](README.en.md).
+
 [3.7.4.3をダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.4.3) · [更新内容](docs/CHANGELOG.ja.md)
 
 [English](README.en.md) · [画像付き操作ガイド](docs/USER_GUIDE.ja.md) · [開発支援](docs/SUPPORT.ja.md)
