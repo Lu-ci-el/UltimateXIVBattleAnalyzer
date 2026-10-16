@@ -45,9 +45,6 @@ A Windows app for working with FFXIV replay DAT files: inspect battles and party
 Full Remake is in development.  
 Further work depends on support for the project.
 
-From 3.7.4.3, open a saved DAT to check its conversion, anonymization, and battle-extraction history together with the UXBA versions that performed those operations.  
-See [processing history](docs/USER_GUIDE.en.md#10-check-a-dats-processing-history).
-
 ## Getting started
 
 1. Download the application ZIP from Releases and extract the whole folder.

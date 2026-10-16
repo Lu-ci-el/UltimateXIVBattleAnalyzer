@@ -138,26 +138,6 @@ Full Remake is in development.
 The distribution version displays an information message.  
 See [support development](SUPPORT.en.md) if you would like to help fund further work.
 
-## 10. Check a DAT's processing history
-
-Normal saves from version 3.7.4.3 onward record the UXBA version and processing operations inside the DAT.  
-Open the saved file to see the following information below its filename:
-
-- The UXBA version that last saved the file
-- Past-to-modern conversion, anonymization, appearance anonymization, and battle extraction, with the version used for each operation
-- Character ID changes
-
-For example: `UXBA 3.7.4.3 saved · Past to modern 3.7.4.3 / Anonymized 3.7.4.3 / Battle extracted 3.7.4.3`
-
-The marker survives renaming and ZIP packaging.  
-Further processing in UXBA retains the existing history.  
-It does not store character names, the original file path, or the recording date.
-
-“No UXBA marker (processing history unknown)” does not certify an original recording.  
-Files processed by older versions may also lack a marker.  
-The marker describes processing history; it does not authenticate the creator or guarantee anonymity.  
-UXBA stops loading and shows an error if the file and marker no longer match.
-
 ## Troubleshooting
 
 If the app will not start, check that you extracted the whole ZIP and installed any requested runtime.  
