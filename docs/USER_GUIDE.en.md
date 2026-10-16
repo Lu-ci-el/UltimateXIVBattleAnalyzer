@@ -2,147 +2,126 @@
 
 [Home](../README.en.md) · [日本語](USER_GUIDE.ja.md)
 
-## Before you start
+## Before starting
 
-Extract the distribution ZIP and run `UltimateXIVBattleAnalyzer.exe`.  
-Keep the included folders together; do not run the app from inside the ZIP.  
-Keep your original DATs and save edited copies under different names.
+Extract the entire download ZIP and run `UltimateXIVBattleAnalyzer.exe`. Do not run it inside the ZIP. Keep the `Runtime`, `Resources`, and `Settings` folders with the executable. The dictionary is included; you do not need to move or remove it.
 
-If prompted at startup, install the [.NET 8 Desktop Runtime for Windows x64](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/).
+If prompted at startup, install the [.NET 8 Desktop Runtime for Windows x64](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/). Use a folder where you have write permission.
 
-## 1. Open a DAT and inspect its battles and party
+Keep your original DATs and save edits to separate files. Settings are stored in the app's `Settings` folder, and working files in `Work`. Choose input and output locations when prompted.
 
-![Main screen before loading a DAT](images/main-en.jpg)
+## 1. Open a DAT
 
-1. Click **Load DAT** and select a replay file.
-2. Check the recording information and party area at the top.
-3. Browse start and end times, duration, battle type, result, enemy name, and enemy ID.  
-   Scroll horizontally to see columns that do not fit on screen.
+![Main screen](images/main-en.png)
 
-Use the selector at the top right to switch between Japanese and English.  
-You can also open a supported ZIP containing a single DAT.
+1. Choose **Load DAT** and select a DAT or supported ZIP.
+2. Inspect the recording information, player list, and battle list.
+3. Check start/end times, duration, results, and enemies. Scroll horizontally to see additional columns.
 
-The app can read supported recordings from different generations.  
-Reading, conversion, and anonymization each have their own supported range; being able to open a DAT does not make every editing operation available for it.
+Use the language selector at the top right to switch between Japanese and English. **Reset** resets the current selection. Reading, conversion, and anonymization have different requirements: being able to open a DAT does not mean every editing operation is supported.
 
-## 2. Find and extract the matching ACT logs
+If the recording does not provide enough information to identify a player, the app displays a Player number even with name anonymization off. Unidentified players cannot be selected as recorder.
 
-You need the ACT logs recorded at the time of the replay.  
-This feature does not create ACT logs from a DAT.
+## 2. Extract a battle
 
-1. Click the **DAT → ACT Log Search → Official Split** control.
-2. Select the DAT for this operation, even if you already have it open.
-3. Select the folder containing your ACT logs.  
-   The search includes subfolders and supported log ZIPs.
-4. Choose an output folder.
-5. When extraction finishes, check the output logs and upload them using the FF Logs uploader.
+This works with modern DATs. For a supported older DAT, use **Past → Modern** first.
 
-Use the original DAT for this search when possible: matching uses the recording date and time, which anonymization changes.  
-Anonymizing a DAT does not change names in ACT logs.  
-Check the visibility settings on FF Logs before sharing.
+1. Open the DAT and select the battle you want to extract.
+2. Choose **Save** and review the extraction confirmation.
+3. Select an output location and DAT or ZIP format, then save.
 
-## 3. Anonymize names and save
+With no battle selected, saving applies to the whole recording. To extract and anonymize together, choose the anonymization settings before saving. You cannot extract another battle from an anonymized DAT; return to the original recording.
 
-This operation is for modern DATs.  
-For an older recording, use **Past → Modern** first if its generation is supported.
+## 3. Anonymize names
 
-1. Open the target DAT.
+1. Open a supported modern DAT.
 2. Enable **Anonymize player names**.
-3. Click **Save**, then choose the output location and format.
-4. Open the saved DAT and check it before sharing.
+3. Leave battles unselected to save the whole recording, or select one battle to extract it.
+4. Choose **Save** and create a separate output file.
 
-To anonymize the whole recording, save without a battle row selected.  
-If a row is selected, the app prompts you to extract that battle instead.
+Names inside the DAT become full English job names, such as `Paladin` or `White Mage`. The app shows `Player 01`, `Player 02`, and so on. These numbers distinguish people even when they have the same job.
 
-Names become aliases such as `Player 01` and `Player 02`.  
-This applies to the supported player records in the DAT, including players other than the recorder.  
-It changes the character identifiers and home-world information stored inside the DAT as well as the displayed names.  
-Home worlds are replaced with an anonymous virtual world, and the internal recording date is replaced with a fixed value.  
-If the filename itself contains a name or recording date, check that too before sharing.
-
-Name anonymization keeps the characters' appearance.  
-Use full anonymization to change it as well.
+Supported character identifiers and home-world information are also changed, and the internal recording date is replaced with a fixed value. Appearance is unchanged. If the original filename contains a name or date, check the output filename before sharing it.
 
 ## 4. Change appearance with full anonymization
 
 ![Full anonymization settings](images/anonymous-en.jpg)
 
-1. Click **Full Anonymization** to open its settings.
-2. Enable **Full Anonymization ON**.
-3. Select race and gender, height, and outfit.  
-   Removing headgear is available for supported combinations.
-4. Close the settings window, check that **Anonymize player names** is enabled on the main screen, and click **Save**.
+1. Open a modern DAT that has not been anonymized, then choose **Full anonymization**.
+2. Enable **Full anonymization ON**.
+3. Choose race, gender, height, and outfit. Supported combinations also offer an option to remove headgear.
+4. Close the settings window and save with **Anonymize player names** enabled.
 
-Choosing settings does not edit the original DAT.  
-The changes are applied to the saved file.  
-Along with names and identifiers, the characters' appearance is changed for sharing.
+Choosing settings does not modify the original DAT. Saving applies changes to names, identifiers, and appearance, and clears the recorder's job-gauge data.
 
-Even full anonymization cannot make recognition impossible.  
-Party composition, movement, and tactics can still provide clues.  
-Review the result before sharing it.
+Full anonymization does not eliminate every way of recognizing a player. Party composition, movement, and tactics can still offer clues. Check the saved result before sharing it.
 
-## 5. Extract a battle into a separate file
+## 5. Change the recorder
 
-This operation uses modern DATs.  
-Convert a supported older recording with **Past → Modern** first.
+1. Open the DAT and enable **Change recorder**.
+2. Select one person from the party-member list.
+3. Choose **Save** and write a separate file.
 
-1. Open a DAT and select the battle interval you want in the list.
-2. Click **Save**.
-3. Review the extraction prompt, then choose the output location and DAT or ZIP format.
+You can change the recorder while anonymizing a replay. You can also reopen an anonymized DAT and choose a different recorder. Use Player numbers to distinguish candidates with the same job.
 
-Extractable intervals depend on the recording and the battles the app recognizes.  
-With no battle selected, saving uses the loaded DAT as a whole.  
-If you also want anonymization, set it before saving.
+When an anonymized DAT is open, name anonymization, full anonymization, battle extraction, character-ID changes, and Past → Modern conversion are unavailable. You can inspect its recording information and battles, and save after enabling recorder changes. Open the original DAT to perform other edits.
 
-## 6. Convert an older DAT to a modern generation
+## 6. Convert an older DAT
 
-Choose **Past → Modern**, select the recording, and follow the prompts to create a separate output.  
-This works for supported recording generations.  
-You can then load the converted DAT for operations intended for modern recordings.
+Choose **Past → Modern**, select the older DAT, and follow the prompts to save a separate file. Open the converted DAT to use modern-DAT operations.
 
-Availability depends on the recording generation.  
-If conversion is unavailable, include the exact error message and recording generation when reporting it.
+Support depends on the recording generation and contents. Use the original recording, rather than a DAT already processed by UXBA. If conversion is unavailable, keep the exact error message.
 
-## 7. Change character ID to improve party-list display
+### Convert a folder in one batch
 
-This feature can improve missing party entries and similar presentation issues when replaying a DAT recorded by someone else.  
-Prepare a DAT recorded with your own character to use as the reference.
+1. Click **Batch Past → Modern**, to the right of **Past → Modern**.
+2. Select an input folder, then a separate output folder. Each picker remembers its previous location.
+3. DATs in subfolders are included. The output keeps their relative folder structure.
+4. Review the success and skip counts, and the reason for each skipped file.
 
-1. Load the target DAT you want to change.
-2. Click **Change Character ID**.
-3. Select your own reference DAT.
-4. Save a separate copy in the current replay folder shown by the save dialog.  
-   The suggested filename begins with `CHARACTER_ID_`.
-5. Use the saved DAT for replay.
+Unsupported, modern, or previously processed DATs and existing output names are skipped. Original DATs and existing outputs are preserved. Use **Cancel** to stop; completed outputs remain. Choose separate folders that do not contain one another.
 
-Check that you selected the intended reference and target.  
-Changing character ID is separate from Full Remake; it does not rebuild race, equipment, or battle content.
+## 7. Change character IDs
 
-## 8. Organize older DATs as individual ZIPs
+This helps adjust party-list presentation in a DAT recorded by someone else. Prepare a reference DAT containing your own character.
 
-1. Click **Individual ZIP compression**.
-2. Choose the input folder containing your original DATs.
-3. Choose a separate output folder.  
-   It cannot be the input folder, a folder inside it, or one of its parent folders.
-4. Confirm the operation.  
-   Each eligible DAT is archived in its own ZIP and organized by generation, duty, and other recording details.
+1. Open the DAT you want to change and choose **Change character ID**.
+2. Select your own DAT as the reference.
+3. Choose an output location and save under another name. The suggested filename starts with `CHARACTER_ID_`.
 
-Original DATs are kept in place and left unchanged.  
-Current-generation recordings are excluded; this tool organizes supported older recordings.  
-Matching existing archives are skipped, while different recordings with the same filename are saved under separate names.  
-Compression does not anonymize a recording.
+Do not confuse the target DAT with the reference DAT. This operation is unavailable for anonymized DATs. To select a recorder from the party members, use **Change recorder** instead.
 
-## 9. Full Remake and support
+## 8. Extract matching ACT logs
 
-Full Remake is in development.  
-The distribution version displays an information message.  
-See [support development](SUPPORT.en.md) if you would like to help fund further work.
+You need the ACT logs from the recording session. This feature does not generate ACT logs from a DAT.
+
+1. Choose the **DAT → ACT log search → Official Split** command.
+2. Select the original DAT.
+3. Select the folder containing the ACT logs. Subfolders and supported log ZIPs are also searched.
+4. Choose an output location and check the extracted logs when processing finishes.
+5. To publish on FF Logs, use the FF Logs uploader.
+
+Matching uses the recording date, so use the original DAT before anonymization. DAT anonymization does not affect ACT logs. Check visibility settings on FF Logs separately.
+
+## 9. Organize older DATs into individual ZIPs
+
+1. Choose **Individual ZIP compression**.
+2. Select the input folder containing the original DATs.
+3. Select a separate output folder. It cannot be the input folder, a parent of it, or a folder inside it.
+4. Confirm and run. Each eligible DAT is archived separately and organized by generation, duty, and other recording information.
+
+Original DATs are not changed or moved. The current generation is excluded; supported older recordings are organized. Identical existing ZIPs are skipped, and different contents sharing a name are saved separately. Compression does not anonymize recordings.
 
 ## Troubleshooting
 
-If the app will not start, check that you extracted the whole ZIP and installed any requested runtime.  
-If loading or conversion stops, keep the exact error text.
+| Problem | What to check |
+| --- | --- |
+| The app will not start | Extract the whole ZIP and install any required runtimes. |
+| The dictionary will not load | Extract the download again, including `Settings/DictionaryPacks/DictionaryPack.uxdic`. |
+| Saving or anonymization is unavailable | Check whether the DAT is a supported modern recording or is already anonymized, and read the message shown in the app. |
+| Conversion or extraction stops | The generation or recording contents may be unsupported. Keep the exact error message. |
+| ACT logs cannot be found | Use the original, non-anonymized DAT and ACT logs from that recording session. |
 
-A useful bug report includes the app version, steps, expected behavior, and actual behavior.  
-Hide character names, servers, dates, and personal paths in screenshots.  
-Do not attach DATs or ACT logs directly to public posts.
+Full Remake is in development; the distributed app displays an information message.
+
+When [reporting a bug](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose), include the app version, steps, expected result, actual result, and error text. Do not attach DATs or ACT logs to public posts. Hide personal information in screenshots. [Support development](SUPPORT.en.md).

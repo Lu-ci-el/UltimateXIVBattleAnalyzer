@@ -1,90 +1,57 @@
 # UltimateXIVBattleAnalyzer
 
-For English instructions, please see the [English guide](README.en.md).
+[English](README.en.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.6) · [操作ガイド](docs/USER_GUIDE.ja.md)
 
-[3.7.4.5をダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.4.5) · [更新内容](docs/CHANGELOG.ja.md)
+FFXIVのリプレイDATを開き、戦闘一覧やパーティ構成を確認できるWindows用アプリです。見返したい戦闘の取り出し、共有用の匿名化、記録者の変更、対応するACTログの抽出に使えます。
 
-[English](README.en.md) · [画像付き操作ガイド](docs/USER_GUIDE.ja.md) · [開発支援](docs/SUPPORT.ja.md)
-
-FFXIVのリプレイDATから戦闘一覧やパーティ構成を確認し、戦闘区間の取り出し、匿名化、対応するACTログの抽出まで行えるWindows用アプリです。
-
-![UXBAのメイン画面](docs/images/main-ja.jpg)
-
-## できること
-
-- **DATの読み込み**  
-  対応する各世代のDATを読み込みます。  
-  コンテンツ、戦闘一覧、時間、パーティ構成などを確認できます。
-
-- **ACTログの検索・Split抽出**  
-  DATとACTログの保存フォルダを選び、対応するログを取り出します。  
-  FF Logsへアップロードするログの準備に使えます。
-
-- **名前の匿名化**  
-  現代DATの名前を `Player 01` などへ変更します。  
-  キャラクターの識別ID、所属サーバー情報、内部の撮影日時も共有用に変更します。
-
-- **完全匿名化**  
-  名前などの匿名化に加え、キャラクターの見た目も変更します。  
-  種族・性別・身長・衣装を設定できます。
-
-- **戦闘区間の抽出**  
-  戦闘一覧から取り出せる区間を選びます。  
-  選んだ区間を、別のDATまたはZIPに保存できます。
-
-- **過去→現代変換**  
-  対応する過去世代のDATを、アプリが扱う現代世代へ変換します。  
-  対応状況はDATの世代によって異なります。
-
-- **キャラID変更**  
-  自分のDATを参照して、対象DATのキャラIDを変更します。  
-  PT一覧の抜けなど、リプレイの表示を整えるために使います。
-
-- **個別ZIP圧縮**  
-  対応する過去のDATを、1本ずつZIPにして別フォルダへ整理します。  
-  元DATは残ります。
-
-フルリメイクは開発中です。  
-今後の開発は支援状況を見ながら進めます。
+![メイン画面](docs/images/main-ja.png)
 
 ## 使い始める
 
-1. ReleasesからアプリのZIPをダウンロードし、フォルダごと展開します。
+1. [配布ページ](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.6)からアプリのZIPをダウンロードします。
+2. ZIPをフォルダごと展開し、`UltimateXIVBattleAnalyzer.exe`を起動します。
+3. 「DAT読み込み」で録画を選びます。
+4. 戦闘一覧を確認し、目的の操作を行って別のファイルへ保存します。
 
-2. `UltimateXIVBattleAnalyzer.exe`を起動します。
+Windows 10／11の64ビット環境向けです。起動に必要な場合は [.NET 8 Desktop Runtime（Windows x64）](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) と [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) を導入してください。アプリは同梱フォルダと一緒に使います。辞書も同梱されています。
 
-3. 「DAT読み込み」でDATを選びます。
+## 主な機能
 
-4. 戦闘一覧を確認し、目的に応じて抽出・匿名化・保存を行います。
+| 機能 | できること |
+| --- | --- |
+| DATの確認 | 対応するDAT／DATを1本含むZIPから、録画情報・パーティ・戦闘一覧を表示します。 |
+| 戦闘区間の抽出 | 選んだ戦闘を別のDATまたはZIPへ保存します。 |
+| 名前の匿名化 | 名前・キャラクター識別情報・所属サーバー情報・内部の撮影日時を共有用に変更します。 |
+| 完全匿名化 | 名前の匿名化に加えて、種族・性別・身長・衣装などの見た目を変更します。 |
+| 記録者変更 | パーティメンバーから記録者を選んで保存します。匿名化後のDATでも変更できます。 |
+| 過去→現代 | 対応する過去世代のDATを、アプリが対応する現代世代へ変換します。 |
+| 過去一括変換 | 入力・出力フォルダを選び、サブフォルダ内の対応DATをまとめて変換します。 |
+| ACTログの抽出 | 元DATと録画時のACTログを照合し、対応するログを取り出します。 |
+| 個別ZIP圧縮 | 対応する過去DATを1本ずつZIPに整理します。元DATは残ります。 |
 
-起動に必要な場合は [.NET 8 Desktop Runtime（Windows x64）](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) と [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) をインストールしてください。  
-アプリは同梱ファイルを含むフォルダのまま使います。
+DAT内の匿名名には `Paladin` などの正式な英語ジョブ名を使い、アプリの画面では `Player 01` のような番号で人物を区別します。同じジョブが複数いても別の人物として扱います。
 
-操作ごとの手順は[画像付き操作ガイド](docs/USER_GUIDE.ja.md)にまとめています。  
-匿名化したDATから人物を推測できる可能性は残ります。  
-戦闘の動きや構成まで別物になる機能ではありません。  
-また、DATの匿名化はACTログには適用されません。
+匿名化済みDATを開いた場合、加工できる操作は**記録者変更だけ**です。戦闘の抽出や見た目の設定は、匿名化する前に元DATで行ってください。元DATは保管しておくとやり直せます。
 
-## 不具合・質問
+対応状況はDATの世代と記録内容によって異なります。名前が分からない記録はPlayer番号で表示します。人物の識別情報が不足している場合は、記録者として選べません。変換・抽出に成功しても、すべてのリプレイで同じ再生結果を保証するものではありません。共有前に保存結果を確認してください。フルリメイクは開発中です。
 
-再現する不具合や未対応DATは[不具合報告](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose)へ、使い方の質問や機能の相談は[Discussions](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)へお願いします。  
-アプリのバージョン、行った操作、期待した結果、実際の結果とエラー文があると調べやすくなります。  
-画像の名前・サーバー・撮影日時・個人フォルダ名は隠してください。  
-DATやACTログは公開投稿に添付しないでください。  
-元DATの非公開送信窓口は現在用意していないため、まずは症状とエラー文で報告してください。  
-詳しくは[報告・ファイル提供の案内](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md#日本語)をご覧ください。
+## 操作方法と問い合わせ
 
-調査・修正や未対応DATへの対応は、支援の状況と開発に充てられる時間によって変わります。  
-対応できない場合もありますが、報告や質問に支援は必須ではありません。  
-報告や支援をいただいても、修正・優先対応・期限をお約束するものではありません。
+- [日本語操作ガイド](docs/USER_GUIDE.ja.md)
+- [English user guide](docs/USER_GUIDE.en.md)
+- [不具合報告](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose)
+- [使い方の質問・相談](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)
+
+報告にはアプリの版、操作手順、期待した結果、実際の結果とエラー文を添えてください。画像の名前・サーバー・日時・個人パスを隠し、DATやACTログを公開投稿へ添付しないでください。[報告・ファイル提供の案内](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md#日本語)も確認してください。
+
+匿名化しても、ジョブ構成や動きなどから人物を推測できる場合があります。また、DATの匿名化はACTログには適用されません。
 
 ## 開発を支えてください
 
-開発・検証を続けるには費用がかかります。  
-自費で更新を続けられる見込みは2026年12月までで、2027年1月以降の更新や8.0対応は、皆さんからの支援に支えられる形になります。  
-使って役に立ったら、無理のない範囲で応援してもらえると助かります。
+開発・検証を続けるには費用がかかります。自費で更新を続けられる見込みは2026年12月までで、2027年1月以降の更新や8.0対応は、皆さんからの支援に支えられる形になります。使って役に立ったら、無理のない範囲で応援してもらえると助かります。
 
-[Ko-fiで支援する](https://ko-fi.com/lost2) · [OFUSEで支援する](https://ofuse.me/lost)
+[Ko-fiで支援する](https://ko-fi.com/lost2) · [OFUSEで支援する](https://ofuse.me/lost) · [開発支援について](docs/SUPPORT.ja.md)
 
-アプリ本体はReleasesで配布します。  
-このリポジトリには説明書と配布案内を置いており、アプリのソースコードは含みません。
+報告や質問に支援は必須ではありません。報告・支援によって修正、優先対応、期限をお約束するものではありません。
+
+アプリ本体はReleasesで配布します。このリポジトリには説明書と配布案内を置いています。
