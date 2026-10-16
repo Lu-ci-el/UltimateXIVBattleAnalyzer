@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "質問・交流 / Questions and community"
+    url: https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions/categories/general
+    about: "使い方の質問や相談はこちらへ。 / Ask questions and discuss ideas here."
+  - name: "報告・ファイル提供・支援の案内 / Reporting, files and support"
+    url: https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md
+    about: "報告に必要な情報、元DATの扱い、対応方針を日英で案内しています。 / Reporting details, original DAT handling and support availability."
