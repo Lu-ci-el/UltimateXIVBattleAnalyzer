@@ -1,12 +1,12 @@
 # UltimateXIVBattleAnalyzer
 
-[English](README.en.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.0) · [操作ガイド](docs/USER_GUIDE.ja.md)
+[English](README.en.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1) · [操作ガイド](docs/USER_GUIDE.ja.md)
 
 FFXIVのリプレイDATを確認・整理するWindows用アプリです。戦闘区間の抽出、共有用の匿名化、過去DATの変換などに使えます。
 
 ## 使い始める
 
-1. [最新版のZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.0)をダウンロードします。
+1. [最新版のZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1)をダウンロードします。
 2. フォルダごと展開し、`UltimateXIVBattleAnalyzer.exe`を起動します。
 3. 「DAT読み込み」で録画を開きます。
 4. 必要な操作を設定し、別ファイルへ保存します。
@@ -20,7 +20,7 @@ Windows 10／11の64ビット環境向けです。必要な辞書は同梱して
 | DATの確認 | 録画情報・プレイヤー・戦闘一覧を表示します。 |
 | 戦闘区間の抽出 | 選んだ区間をDATまたはZIPへ保存します。 |
 | 名前の匿名化 | 名前やキャラクターの識別情報を変更します。 |
-| 完全匿名化 | 名前に加えて、種族・性別・身長・衣装を変更します。 |
+| 外見匿名化 | 名前に加えて、種族・性別・身長・衣装を変更します。 |
 | 過去→現代・過去一括変換 | 対応する過去DATを変換します。 |
 | キャラID変更 | 自分のDATを参照してキャラIDを変更します。 |
 | ACTログの抽出 | 録画時のACTログから対応する区間を取り出します。 |

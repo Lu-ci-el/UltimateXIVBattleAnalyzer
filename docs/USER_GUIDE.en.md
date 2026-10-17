@@ -32,20 +32,20 @@ Convert supported older recordings first with Past to Modern. An anonymized DAT 
 
 Names become English job names, while the app displays labels such as `Player 01`. Character and home-world identifiers and the recording date are also changed. Appearance stays the same. Anonymization also puts a tank first.
 
-## Change appearance with full anonymization
+## Change appearance with appearance anonymization
 
-1. Open an original modern DAT and open Full Anonymization.
-2. Turn Full Anonymization on.
+1. Open an original modern DAT and open Appearance Anonymization.
+2. Turn Appearance Anonymization on.
 3. Choose race, gender, height, outfit and headgear settings.
 4. Close the settings, keep name anonymization enabled, and save.
 
-This changes names and appearance together. Removing headgear uses a standard face and different hairstyles for each person; Roegadyn use no hair. Dyeable armor uses class/job colors. Weapons and shields are undyed. The settings also apply to equipment changes during the recording.
+This changes names and appearance together. Removing headgear uses a standard face and different hairstyles for each person; Roegadyn use no hair. Dyeable armor uses class/job colors. Weapons and shields are undyed. The settings also apply to equipment changes during the recording. The Phoenix outfit uses Vanguard weapons for supported jobs.
 
 Choosing settings does not change the original DAT. To change the settings after anonymization, start again from the original.
 
 ## Convert older DATs
 
-Choose Past to Modern, select an original older DAT, and follow the prompts to save a separate file. Open the converted DAT to extract battles or anonymize it.
+Choose Past to Modern, select a DAT or a ZIP containing a DAT, and follow the prompts to save a separate file. Check the conversion result for support status.
 
 For multiple files, use batch conversion.
 
@@ -53,7 +53,7 @@ For multiple files, use batch conversion.
 2. Subfolders are included, and their structure is preserved in the output.
 3. Check the completion report for converted and skipped files and their reasons.
 
-Unsupported, modern or processed DATs are skipped, as are files whose output name already exists. Originals and existing outputs are not overwritten. Canceling leaves completed outputs in place.
+Unsupported DATs, DATs already in the current format, and files whose output name already exists are skipped. Originals and existing outputs are not overwritten. Canceling leaves completed outputs in place.
 
 ## Change character ID
 
@@ -88,7 +88,6 @@ The operations you apply add labels before the original filename.
 
 | Label | Meaning |
 | --- | --- |
-| `T1` | First tank |
 | `Miqo(M)`, etc. | Race and gender (M = male, F = female) |
 | `S`, `M`, `L` | Height |
 | `RB`, etc. | Outfit |

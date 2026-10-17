@@ -35,17 +35,12 @@ UXBAで困ったことがあれば、分かる範囲で状況を教えてくだ�
 調査では、匿名化や変換をしていない元の過去DAT・現代DATが必要になる場合があります。  
 元のファイルは手元に保管してください。
 
-**このリポジトリのIssue・Discussionsは、本文も添付も公開されます。**  
-未匿名化DATやACTログを公開添付しないでください。  
-ZIPにまとめても匿名化や非公開化はされません。  
 変換・抽出・匿名化がうまくいかなかった場合は、[Dropboxのファイル提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)へ元のDATを送ってください。UXBAのバージョン、行った操作、症状やエラー文を記したテキストも添えてください。Issueがある場合は、そのURLも記載してください。  
-Dropboxアカウントがなくても提出できます。公開IssueにはDATを添付せず、こちらの窓口を使ってください。  
+Dropboxアカウントがなくても提出できます。  
 個別のリポジトリやDiscordへの招待、外部の保存先を訪問しての資料回収は行っていません。
 
 画像は投稿欄へドラッグ＆ドロップするか、添付ボタンから追加できます。  
 アップロードが完了し、本文に添付リンクが入ったことを確認してください。  
-名前・サーバー名・撮影日時・個人フォルダ名などを隠してください。  
-エラー文やログの抜粋にも、個人情報が含まれていないか確認をお願いします。
 
 ### 開発支援と対応について
 
@@ -55,7 +50,11 @@ Dropboxアカウントがなくても提出できます。公開IssueにはDAT�
 報告・資料提供・質問に、支援は必須ではありません。  
 また、報告や資料提供、支援をいただいても、修正・機能追加・優先対応・期限をお約束するものではありません。
 
-開発を応援していただける方はこちらからお願いします。
+開発を継続するには支援が必要です。8.0への対応は支援次第です。
+
+「便利だな」「これは必要だな」と思ったら、支援していただければと思います。
+
+支援がなければ需要がなかったと判断し、開発を終了します。
 
 - [Ko-fi](https://ko-fi.com/lost2)
 - [OFUSE](https://ofuse.me/lost)
@@ -92,17 +91,12 @@ Start by reporting the recording generation, duty, operation, and error message.
 Investigating a problem may require the original older or modern DAT, without anonymization or conversion.  
 Please keep that original file.
 
-**Issue and Discussion posts in this repository, including attachments, are public.**  
-Do not publicly attach unanonymized DATs or ACT logs.  
-Putting a file in a ZIP does not anonymize it or make it private.  
-If conversion, battle extraction, or party-list organization do not work correctly, send the original DAT through the [Dropbox file submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif). Include a text file with the UXBA version, the operation you tried, and the symptoms or error message. If you have opened an issue, include its URL too.  
-A Dropbox account is not required. Use this form for DAT files instead of attaching them to a public issue.  
+If conversion, battle extraction, or anonymization do not work correctly, send the original DAT through the [Dropbox file submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif). Include a text file with the UXBA version, the operation you tried, and the symptoms or error message. If you have opened an issue, include its URL too.  
+A Dropbox account is not required.  
 The developer does not collect files by joining individual repositories or Discord servers, or by visiting external storage locations.
 
 To attach a screenshot, drag it into the post or use the attachment button.  
 Wait for the upload to finish and for its link to appear in the post.  
-Hide names, servers, recording dates, and personal folder names.  
-Check error messages and log excerpts for personal information as well.
 
 ### Development support and availability
 
@@ -112,7 +106,11 @@ Depending on those resources, a response may take time, or a problem may remain 
 Donations are not required to report a problem, contribute evidence, or ask a question.  
 Reports, contributed files, and donations do not guarantee a fix, a new feature, priority, or a deadline.
 
-If you would like to support development:
+Continued development needs your support. Support for 8.0 will depend on contributions.
+
+If you find UXBA useful or feel it is something you need, please consider supporting its development.
+
+Without support, I will take that as a sign that there is no demand and end development.
 
 - [Ko-fi](https://ko-fi.com/lost2)
 - [OFUSE](https://ofuse.me/lost)

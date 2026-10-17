@@ -1,12 +1,12 @@
 # UltimateXIVBattleAnalyzer
 
-[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.0) · [User guide](docs/USER_GUIDE.en.md)
+[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1) · [User guide](docs/USER_GUIDE.en.md)
 
 A Windows app for viewing and organizing FFXIV replay DATs. Extract battles, anonymize recordings for sharing, and convert supported older DATs.
 
 ## Getting started
 
-1. Download the [latest ZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.0).
+1. Download the [latest ZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1).
 2. Extract the whole folder and run `UltimateXIVBattleAnalyzer.exe`.
 3. Open a recording with the DAT load button.
 4. Set the operations you need and save a separate file.
@@ -20,7 +20,7 @@ For 64-bit Windows 10/11. The required dictionary is included. If prompted, inst
 | View DATs | Shows recording information, players and battles. |
 | Extract battles | Saves a selected interval as a DAT or ZIP. |
 | Anonymize names | Changes names and character identifiers. |
-| Full anonymization | Also changes race, gender, height and outfit. |
+| Appearance anonymization | Also changes race, gender, height and outfit. |
 | Past to Modern / batch conversion | Converts supported older DATs. |
 | Change Character ID | Uses your own recording as the character-ID reference. |
 | Extract ACT logs | Finds matching intervals in the ACT logs from the recording. |

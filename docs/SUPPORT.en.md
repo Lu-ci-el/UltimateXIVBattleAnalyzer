@@ -21,7 +21,7 @@ Depending on those resources, a response may take time, or a problem may remain 
 Donations are not required to report a problem, contribute evidence, or ask a question.  
 Reports and donations do not guarantee a fix, a new feature, priority, or a deadline.
 
-If conversion, battle extraction, or party-list organization do not work correctly, send the original DAT through the [Dropbox file submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif). Include a text file with the UXBA version, the operation you tried, and the symptoms or error message. If you have opened an issue, include its URL too.
+If conversion, battle extraction, or anonymization do not work correctly, send the original DAT through the [Dropbox file submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif). Include a text file with the UXBA version, the operation you tried, and the symptoms or error message. If you have opened an issue, include its URL too.
 
 Please use Issues for bugs and Discussions for questions and ideas.  
 See the [reporting and file sharing guide](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md#english) for details.

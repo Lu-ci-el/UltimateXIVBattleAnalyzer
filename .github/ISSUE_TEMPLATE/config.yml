@@ -2,7 +2,7 @@ blank_issues_enabled: true
 contact_links:
   - name: "DATファイルを提出する / Submit a DAT file"
     url: https://www.dropbox.com/request/gkofh48datowq9uozjif
-    about: "変換・抽出・匿名化の問題が起きた元DATと症状を送ってください。 / Send the original DAT and details of a conversion, extraction, or recorder problem."
+    about: "変換・抽出・匿名化の問題が起きた元DATと症状を送ってください。 / Send the original DAT and details of a conversion, extraction, or anonymization problem."
   - name: "質問・交流 / Questions and community"
     url: https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions/categories/general
     about: "使い方の質問や相談はこちらへ。 / Ask questions and discuss ideas here."
