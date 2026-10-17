@@ -24,13 +24,17 @@ Saving without selecting a battle row processes the whole recording. Use the lan
 
 Convert supported older recordings first with Past to Modern. An anonymized DAT cannot be extracted again. To extract and anonymize together, select both operations on the original DAT before saving.
 
+## Before publishing or sharing
+
+**Before publishing or sharing a DAT, always check that data from the same battle is not publicly available on FF Logs or similar services.** Even after names, IDs, and appearance are changed, action sequences, timestamps, and battle duration can form a combat fingerprint that may be matched to public logs and used to infer who took part. Anonymization does not guarantee complete anonymity.
+
 ## Anonymize names
 
 1. Open a modern DAT that has not been anonymized.
 2. Enable player-name anonymization.
 3. Save to a separate file.
 
-Names become English job names, while the app displays labels such as `Player 01`. Character and home-world identifiers and the recording date are also changed. Appearance stays the same. Anonymization also puts a tank first.
+Names become English job names, while the app displays labels such as `Player 01`. Character and home-world identifiers and the recording date are also changed. Titles are removed, and the party leader is set to the first tank. Appearance stays the same. Anonymization also puts a tank first.
 
 ## Change appearance with appearance anonymization
 

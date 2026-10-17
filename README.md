@@ -1,12 +1,12 @@
 # UltimateXIVBattleAnalyzer
 
-[English](README.en.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1) · [操作ガイド](docs/USER_GUIDE.ja.md)
+[English](README.en.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.2) · [操作ガイド](docs/USER_GUIDE.ja.md)
 
 FFXIVのリプレイDATを確認・整理するWindows用アプリです。戦闘区間の抽出、共有用の匿名化、過去DATの変換などに使えます。
 
 ## 使い始める
 
-1. [最新版のZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1)をダウンロードします。
+1. [最新版のZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.2)をダウンロードします。
 2. フォルダごと展開し、`UltimateXIVBattleAnalyzer.exe`を起動します。
 3. 「DAT読み込み」で録画を開きます。
 4. 必要な操作を設定し、別ファイルへ保存します。
@@ -27,6 +27,10 @@ Windows 10／11の64ビット環境向けです。必要な辞書は同梱して
 | 個別ZIP圧縮 | 過去DATを1本ずつZIPに整理します。 |
 
 元DATは保管してください。抽出や見た目の変更は匿名化前に行います。詳しい手順は[操作ガイド](docs/USER_GUIDE.ja.md)をご覧ください。
+
+## 公開・共有前の確認
+
+**公開・共有する前に、FF Logsなどに同じ戦闘のデータが公開されていないことを必ず確認してください。** 名前・ID・外見などを置き換えていても、アクションの順序や時刻、戦闘時間などの「戦闘指紋」から公開ログと照合され、人物を推測される可能性があります。匿名化は完全な匿名性を保証するものではありません。
 
 ## 問い合わせ
 

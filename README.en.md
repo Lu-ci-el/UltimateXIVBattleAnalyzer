@@ -1,12 +1,12 @@
 # UltimateXIVBattleAnalyzer
 
-[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1) · [User guide](docs/USER_GUIDE.en.md)
+[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.2) · [User guide](docs/USER_GUIDE.en.md)
 
 A Windows app for viewing and organizing FFXIV replay DATs. Extract battles, anonymize recordings for sharing, and convert supported older DATs.
 
 ## Getting started
 
-1. Download the [latest ZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1).
+1. Download the [latest ZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.2).
 2. Extract the whole folder and run `UltimateXIVBattleAnalyzer.exe`.
 3. Open a recording with the DAT load button.
 4. Set the operations you need and save a separate file.
@@ -27,6 +27,10 @@ For 64-bit Windows 10/11. The required dictionary is included. If prompted, inst
 | Individual ZIP compression | Organizes older DATs into separate ZIPs. |
 
 Keep your original DATs. Extract battles and set appearance before anonymizing. See the [user guide](docs/USER_GUIDE.en.md) for instructions.
+
+## Before publishing or sharing
+
+**Before publishing or sharing a DAT, always check that data from the same battle is not publicly available on FF Logs or similar services.** Even after names, IDs, and appearance are changed, action sequences, timestamps, and battle duration can form a combat fingerprint that may be matched to public logs and used to infer who took part. Anonymization does not guarantee complete anonymity.
 
 ## Questions and reports
 

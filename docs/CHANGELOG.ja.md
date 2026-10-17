@@ -1,9 +1,13 @@
 # リリース情報
 
-## 3.7.7.1 — 初回公開
+## 3.7.7.2 — 初回公開
 
 リプレイDATの確認、戦闘区間の抽出、名前・外見の匿名化、過去DATの変換、キャラID変更、ACTログの抽出、個別ZIP圧縮を備えています。
 
 配布ZIPには辞書と日英の操作ガイドを同梱しています。
 
-[操作ガイド](USER_GUIDE.ja.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.1) · [開発支援](SUPPORT.ja.md)
+## 公開・共有前の確認
+
+**公開・共有する前に、FF Logsなどに同じ戦闘のデータが公開されていないことを必ず確認してください。** 名前・ID・外見などを置き換えていても、アクションの順序や時刻、戦闘時間などの「戦闘指紋」から公開ログと照合され、人物を推測される可能性があります。匿名化は完全な匿名性を保証するものではありません。
+
+[操作ガイド](USER_GUIDE.ja.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.7.2) · [開発支援](SUPPORT.ja.md)
