@@ -38,8 +38,8 @@ UXBAで困ったことがあれば、分かる範囲で状況を教えてくだ�
 **このリポジトリのIssue・Discussionsは、本文も添付も公開されます。**  
 未匿名化DATやACTログを公開添付しないでください。  
 ZIPにまとめても匿名化や非公開化はされません。  
-現在、元DATを開発者だけに届ける専用の送信窓口は用意していません。  
-このページでは元DATの送付を受け付けていないため、症状やエラー文で報告してください。  
+変換・抽出・匿名化がうまくいかなかった場合は、[Dropboxのファイル提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)へ元のDATを送ってください。UXBAのバージョン、行った操作、症状やエラー文を記したテキストも添えてください。Issueがある場合は、そのURLも記載してください。  
+Dropboxアカウントがなくても提出できます。公開IssueにはDATを添付せず、こちらの窓口を使ってください。  
 個別のリポジトリやDiscordへの招待、外部の保存先を訪問しての資料回収は行っていません。
 
 画像は投稿欄へドラッグ＆ドロップするか、添付ボタンから追加できます。  
@@ -95,8 +95,8 @@ Please keep that original file.
 **Issue and Discussion posts in this repository, including attachments, are public.**  
 Do not publicly attach unanonymized DATs or ACT logs.  
 Putting a file in a ZIP does not anonymize it or make it private.  
-There is currently no dedicated inbox for sending an original DAT privately to the developer.  
-This page does not accept original DAT submissions; please report symptoms and error messages instead.  
+If conversion, battle extraction, or party-list organization do not work correctly, send the original DAT through the [Dropbox file submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif). Include a text file with the UXBA version, the operation you tried, and the symptoms or error message. If you have opened an issue, include its URL too.  
+A Dropbox account is not required. Use this form for DAT files instead of attaching them to a public issue.  
 The developer does not collect files by joining individual repositories or Discord servers, or by visiting external storage locations.
 
 To attach a screenshot, drag it into the post or use the attachment button.  

@@ -46,6 +46,6 @@ Hide names, servers, recording dates, and personal folder names in screenshots.
 **This post and its attachments are public. Do not attach unanonymized DATs or ACT logs.**  
 Putting a file in a ZIP does not make it private.  
 For an unsupported DAT, start with the error message and keep the original file.  
-There is currently no private inbox for original DAT submissions.  
+If conversion, battle extraction, or party-list organization do not work correctly, send the original DAT through the [Dropbox file submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif). Include a text file with the UXBA version, the operation you tried, and the symptoms or error message. If you have opened an issue, include its URL too.  
 Use this form to report symptoms and error messages without attaching a DAT.  
 The developer does not collect files through individual invitations or visits to external storage locations.

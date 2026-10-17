@@ -22,5 +22,7 @@ UXBAは、リプレイを整理したり、見返したい戦闘を取り出し�
 報告・資料提供・質問に、支援は必須ではありません。  
 報告や支援をいただいても、修正・機能追加・優先対応・期限をお約束するものではありません。
 
+変換・抽出・匿名化がうまくいかなかった場合は、[Dropboxのファイル提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)へ元のDATを送ってください。UXBAのバージョン、行った操作、症状やエラー文を記したテキストも添えてください。Issueがある場合は、そのURLも記載してください。
+
 不具合はIssuesへ、使い方の質問や相談はDiscussionsへお願いします。  
 詳しくは[報告・ファイル提供の案内](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md#日本語)をご覧ください。
