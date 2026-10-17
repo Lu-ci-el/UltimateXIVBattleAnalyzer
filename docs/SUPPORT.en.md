@@ -4,13 +4,11 @@
 
 I am building UXBA to make replays easier to organize, revisit, and anonymize before sharing.
 
-Keeping it working costs money and time.  
-Game updates require adjustments, and recordings from different generations need careful testing.  
-I can fund updates myself through December 2026.  
-Updates from January 2027 onward, 8.0 support, and further work on Full Remake will depend on community support.
+Continued development needs your support. Support for 8.0 will depend on contributions.
 
-If UXBA is useful to you, a contribution at a level you are comfortable with would help keep the project going.  
-Messages of encouragement are welcome too.
+If you find UXBA useful or feel it is something you need, please consider supporting its development.
+
+Without support, I will take that as a sign that there is no demand and end development.
 
 - [Support on Ko-fi](https://ko-fi.com/lost2)
 - [Support on OFUSE](https://ofuse.me/lost)

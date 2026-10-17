@@ -32,11 +32,15 @@ Windows 10／11の64ビット環境向けです。必要な辞書は同梱して
 
 [不具合報告](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose) · [使い方の質問](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)
 
-変換などがうまくいかない場合は、元DATと症状・エラー文を[Dropboxの提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)へ送ってください。DATやACTログを公開投稿に添付しないでください。
+変換などがうまくいかない場合は、元DATと症状・エラー文を[Dropboxの提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)へ送ってください。
 
 ## 開発支援
 
-自費で更新を続けられる見込みは2026年12月までです。2027年1月以降の更新や8.0対応は、皆さんからの支援に支えられる形になります。
+開発を継続するには支援が必要です。8.0への対応は支援次第です。
+
+「便利だな」「これは必要だな」と思ったら、支援していただければと思います。
+
+支援がなければ需要がなかったと判断し、開発を終了します。
 
 [Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost) · [開発支援について](docs/SUPPORT.ja.md)
 

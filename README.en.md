@@ -32,11 +32,15 @@ Keep your original DATs. Extract battles and set appearance before anonymizing. 
 
 [Report a bug](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose) · [Ask a usage question](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)
 
-If conversion or another operation fails, send the original DAT and the symptoms/error message through the [Dropbox upload form](https://www.dropbox.com/request/gkofh48datowq9uozjif). Do not attach DATs or ACT logs to public posts.
+If conversion or another operation fails, send the original DAT and the symptoms/error message through the [Dropbox upload form](https://www.dropbox.com/request/gkofh48datowq9uozjif).
 
 ## Support development
 
-Self-funded updates are expected to continue through December 2026. Updates from January 2027 and support for 8.0 will depend on community support.
+Continued development needs your support. Support for 8.0 will depend on contributions.
+
+If you find UXBA useful or feel it is something you need, please consider supporting its development.
+
+Without support, I will take that as a sign that there is no demand and end development.
 
 [Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost) · [About development support](docs/SUPPORT.en.md)
 
