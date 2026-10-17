@@ -36,6 +36,12 @@ Convert supported older recordings first with Past to Modern. An anonymized DAT 
 
 Names become English job names, while the app displays labels such as `Player 01`. Character and home-world identifiers and the recording date are also changed. Titles are removed, and the party leader is set to the first tank. Appearance stays the same. Anonymization also puts a tank first.
 
+## End a replay before the clear
+
+Enable name anonymization to make “Cut ending” available. Turn it on only when needed, choose an integer from 1 to 99 for the remaining HP percentage, and save. It is off by default; the initial percentage is 2%.
+
+A cleared replay ends at the final boss HP record that reaches or falls below your chosen percentage, and the saved replay is shown as not cleared. The final model is distinguished even when enemy names are identical. HP updates are discrete, so the actual remaining HP may be slightly below your setting. Saving stops if the final boss or its HP cannot be confirmed. Replays that are already not cleared are not shortened.
+
 ## Change appearance with appearance anonymization
 
 1. Open an original modern DAT and open Appearance Anonymization.
@@ -97,7 +103,7 @@ The operations you apply add labels before the original filename.
 | `RB`, etc. | Outfit |
 | `Head(on)`, `Head(off)` | Headgear on or off |
 | `Anon` | Name anonymization |
-| `Split` | Battle extraction |
+| `Split` | Battle extraction or ending cut |
 
 ## Troubleshooting and reports
 
