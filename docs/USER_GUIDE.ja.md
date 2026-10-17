@@ -102,6 +102,5 @@ FF Logsへ掲載する場合は、FF Logsのアップローダーを使います
 
 [不具合報告](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose)には、アプリのバージョン・行った操作・症状・エラー文を記載してください。変換などがうまくいかないDATは、[Dropboxの提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)へ元DATと説明を送ってください。Issueがある場合はURLも添えてください。
 
-DATやACTログは公開投稿へ添付せず、画像の個人情報も隠してください。匿名化後も、ジョブ構成や動きから人物を推測できる場合があります。共有前にファイル名と保存結果を確認してください。
 
 [使い方の質問](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions) · [開発支援](SUPPORT.ja.md)

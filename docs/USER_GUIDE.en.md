@@ -102,6 +102,5 @@ If the app does not start, check that the entire ZIP was extracted and the requi
 
 In a [bug report](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose), include the app version, steps, symptoms and error message. If conversion or another operation fails on a DAT, send the original DAT and a description through the [Dropbox upload form](https://www.dropbox.com/request/gkofh48datowq9uozjif). Include the issue URL if you have one.
 
-Do not attach DATs or ACT logs to public posts. Hide personal information in screenshots. Job composition and player actions can still identify people after anonymization. Check filenames and saved results before sharing.
 
 [Usage questions](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions) · [Support development](SUPPORT.en.md)
