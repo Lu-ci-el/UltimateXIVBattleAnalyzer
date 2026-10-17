@@ -1,6 +1,6 @@
 # UltimateXIVBattleAnalyzer
 
-[English](README.en.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.8) · [操作ガイド](docs/USER_GUIDE.ja.md)
+[English](README.en.md) · [ダウンロード](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.9) · [操作ガイド](docs/USER_GUIDE.ja.md)
 
 FFXIVのリプレイDATを開き、戦闘一覧やパーティ構成を確認できるWindows用アプリです。見返したい戦闘の取り出し、共有用の匿名化、記録者の変更、対応するACTログの抽出に使えます。
 
@@ -8,7 +8,7 @@ FFXIVのリプレイDATを開き、戦闘一覧やパーティ構成を確認で
 
 ## 使い始める
 
-1. [配布ページ](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.8)からアプリのZIPをダウンロードします。
+1. [配布ページ](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.9)からアプリのZIPをダウンロードします。
 2. ZIPをフォルダごと展開し、`UltimateXIVBattleAnalyzer.exe`を起動します。
 3. 「DAT読み込み」で録画を選びます。
 4. 戦闘一覧を確認し、目的の操作を行って別のファイルへ保存します。

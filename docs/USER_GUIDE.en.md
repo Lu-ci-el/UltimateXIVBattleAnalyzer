@@ -32,6 +32,8 @@ This works with modern DATs. For a supported older DAT, use **Past → Modern** 
 
 With no battle selected, saving applies to the whole recording. To extract and anonymize together, choose the anonymization settings before saving. You cannot extract another battle from an anonymized DAT; return to the original recording.
 
+Extraction preserves the original DAT's initial entry time. It is not replaced with one fixed time for every duty.
+
 ## 3. Anonymize names
 
 1. Open a supported modern DAT.
@@ -49,8 +51,10 @@ Supported character identifiers and home-world information are also changed, and
 
 1. Open a modern DAT that has not been anonymized, then choose **Full anonymization**.
 2. Enable **Full anonymization ON**.
-3. Choose race, gender, height, and outfit. Supported combinations also offer an option to remove headgear.
+3. Choose race, gender, height, and outfit. Every race and gender can remove headgear.
 4. Close the settings window and save with **Anonymize player names** enabled.
+
+Removing headgear uses the selected race's default face and randomizes each player's hairstyle. Roegadyn are bald. Dyeable armor uses the assigned color for all 32 combat classes and jobs, including Blue Mage and Beastmaster. Undyeable armor retains its original color. Weapons and shields are undyed: item-level 665 Exquisite weapons, Exquisite Gentlemage's Umbrella for Blue Mage, and the Beastliege hand axe and hoplon for Beastmaster. Phoenix Hero, Vanguard, YoRHa Type-51, Type-53, Type-55, and No.2 Type B outfits are also available.
 
 Choosing settings does not modify the original DAT. Saving applies changes to names, identifiers, and appearance, and clears the recorder's job-gauge data.
 
@@ -65,6 +69,20 @@ Full anonymization does not eliminate every way of recognizing a player. Party c
 You can change the recorder while anonymizing a replay. You can also reopen an anonymized DAT and choose a different recorder. Use Player numbers to distinguish candidates with the same job.
 
 When an anonymized DAT is open, name anonymization, full anonymization, battle extraction, character-ID changes, and Past → Modern conversion are unavailable. You can inspect its recording information and battles, and save after enabling recorder changes. Open the original DAT to perform other edits.
+
+### Output filenames
+
+Applied operations are appended to the original name. Example: `Recording T1 Miqo(M) S RB Split.dat`.
+
+- `T1`, `T2`, `H1`, `D1`, etc.: the selected recorder, matching the player list.
+- `Miqo(M)`: race abbreviation and gender (M/F).
+- `S`, `M`, `L`: minimum, middle, or maximum height.
+- `RB`, etc.: outfit abbreviation.
+- `Split`: battle extraction. Name-only anonymization adds `Anon`.
+
+Race abbreviations: Hyur, Ele, Lala, Miqo, Roe, AuRa, Hroth, Viera.
+
+Outfit abbreviations: Rabbit RB, Dapper Rabbit RD, Chocobo CB, Chicken CK, Tonberry TB, Kappa KP, Frog FG, Pig PG, Elephant EL, Reindeer RE, Magical MG, Phoenix Hero PH, Vanguard VG, YoRHa Type-51 Y51, No.2 Type B 2B, YoRHa Type-53 Y53, YoRHa Type-55 Y55.
 
 ## 6. Convert an older DAT
 

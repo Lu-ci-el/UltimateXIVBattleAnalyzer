@@ -2,6 +2,10 @@
 
 [Home](../README.en.md) · [User guide](USER_GUIDE.en.md) · [日本語](CHANGELOG.ja.md)
 
+## 3.7.5.9
+
+Extraction now retains the original recording's initial entry time. Output filenames include the applied recorder, anonymization settings, and extraction tag. Full anonymization adds six outfits and supports removing headgear for every race and gender. Armor colors cover all 32 combat classes and jobs, including Blue Mage and Beastmaster. Weapons and shields are undyed.
+
 ## 3.7.5.8
 
 Fixed battle extraction failures caused by missing player state when participants despawned or spawned again before the selected battle.
