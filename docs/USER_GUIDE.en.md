@@ -40,7 +40,7 @@ Names become English job names, while the app displays labels such as `Player 01
 
 Enable name anonymization to make “Cut ending” available. Turn it on only when needed, choose an integer from 1 to 99 for the remaining HP percentage, and save. It is off by default; the initial percentage is 2%.
 
-A cleared replay ends at the final boss HP record that reaches or falls below your chosen percentage, and the saved replay is shown as not cleared. The final model is distinguished even when enemy names are identical. HP updates are discrete, so the actual remaining HP may be slightly below your setting. Saving stops if the final boss or its HP cannot be confirmed. Replays that are already not cleared are not shortened.
+For both clears and wipes, the replay ends at the last battle's boss HP record that reaches or falls below your chosen percentage, and the saved replay is shown as not cleared. The final model is distinguished even when enemy names are identical. HP updates are discrete, so the actual remaining HP may be slightly below your setting. Saving stops if the chosen HP was not reached or the final boss or its HP cannot be confirmed. Movies before the cutoff are retained; later movies and post-wipe preparation are removed.
 
 ## Change appearance with appearance anonymization
 

@@ -21,7 +21,7 @@ For 64-bit Windows 10/11. The required dictionary is included. If prompted, inst
 | Extract battles | Saves a selected interval as a DAT or ZIP. |
 | Anonymize names | Changes names and character identifiers. |
 | Appearance anonymization | Also changes race, gender, height and outfit. |
-| End cut | Optionally ends a cleared recording at a chosen remaining HP during anonymization, saving it as uncleared. |
+| End cut | Optionally ends a clear or wipe recording at a chosen remaining HP during anonymization, saving it as uncleared. |
 | Past to Modern / batch conversion | Converts supported older DATs. |
 | Change Character ID | Uses your own recording as the character-ID reference. |
 | Extract ACT logs | Finds matching intervals in the ACT logs from the recording. |
