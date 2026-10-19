@@ -1,52 +1,33 @@
 # UltimateXIVBattleAnalyzer
 
-[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/latest) · [User guide](docs/USER_GUIDE.en.md)
+[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/latest) · [English user guide](docs/USER_GUIDE.en.md)
 
-A Windows app for viewing and organizing FFXIV replay DATs. Extract battles, anonymize recordings for sharing, and convert supported older DATs.
+A Windows app for inspecting and organizing FFXIV replay DAT files from dungeons, trials, raids, and alliance raids.
+
+## What it can do
+
+- Display recorded date/time, clear status, party composition, durations, DutyID, players, and battles
+- Find matching ACT logs and extract encounters for upload to FF Logs
+- Anonymize identities and appearance, change the recorder, and cut the ending at a chosen boss HP percentage
+- Extract battle intervals, change character IDs, and convert supported older DATs individually or in batches
+- Compress older DATs into individual ZIPs and organize them
+
+Editing features are under testing. Some DATs are unsupported, and playback issues may occur. Full Remake is under development and unavailable in the distributed release.
 
 ## Getting started
 
-1. Download the [latest ZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/latest).
-2. Extract the whole folder and run `UltimateXIVBattleAnalyzer.exe`.
-3. Open a recording with the DAT load button.
-4. Set the operations you need and save a separate file.
+1. Download the [distribution ZIP](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/latest) and extract the entire folder.
+2. Run `UltimateXIVBattleAnalyzer.exe` and use “Load DAT” to open a DAT or a ZIP containing one DAT.
+3. Set the desired options, keep the original DAT, and save to a separate file.
 
-For 64-bit Windows 10/11. The required dictionary is included. If prompted, install [.NET 8 Desktop Runtime for Windows x64](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/).
+Keep the bundled dictionary and folders together. See the [English user guide](docs/USER_GUIDE.en.md) for setup, supported conditions, and instructions.
 
-## Features
+Only recorder changes are available for an already anonymized DAT. Anonymization does not guarantee complete anonymity. Before sharing, check whether logs of the same encounter are public on FF Logs or elsewhere. After game updates, wait for a distribution supporting Past → Modern and anonymization in the new environment.
 
-| Feature | What it does |
-| --- | --- |
-| View DATs | Shows recording information, players and battles. |
-| Extract battles | Saves a selected interval as a DAT or ZIP. |
-| Anonymize names | Changes names and character identifiers. |
-| Appearance anonymization | Also changes race, gender, height and outfit. |
-| End cut | Optionally ends a clear or wipe recording at a chosen remaining HP during anonymization, saving it as uncleared. |
-| Past to Modern / batch conversion | Converts supported older DATs. |
-| Change Character ID | Uses your own recording as the character-ID reference. |
-| Extract ACT logs | Finds matching intervals in the ACT logs from the recording. |
-| Individual ZIP compression | Organizes older DATs into separate ZIPs. |
+## Questions and development support
 
-Keep your original DATs. Extract battles and set appearance before anonymizing. See the [user guide](docs/USER_GUIDE.en.md) for instructions.
+[Report a bug](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose) · [Usage questions](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions) · [Submit a DAT](https://www.dropbox.com/request/gkofh48datowq9uozjif)
 
-## Before publishing or sharing
+The app is generally free, but continued development is difficult without support. Additional analysis and development depend on overall demand and support. The source code is private to protect the anonymization approach. Please use the app only if you are comfortable doing so.
 
-**Before publishing or sharing a DAT, always check that data from the same battle is not publicly available on FF Logs or similar services.** Even after names, IDs, and appearance are changed, action sequences, timestamps, and battle duration can form a combat fingerprint that may be matched to public logs and used to infer who took part. Anonymization does not guarantee complete anonymity.
-
-## Questions and reports
-
-[Report a bug](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose) · [Ask a usage question](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)
-
-If conversion or another operation fails, send the original DAT and the symptoms/error message through the [Dropbox upload form](https://www.dropbox.com/request/gkofh48datowq9uozjif).
-
-## Support development
-
-Continued development needs your support. Support for 8.0 will depend on contributions.
-
-If you find UXBA useful or feel it is something you need, please consider supporting its development.
-
-Without support, I will take that as a sign that there is no demand and end development.
-
-[Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost) · [About development support](docs/SUPPORT.en.md)
-
-Support is not required to report issues or ask questions. Contributions do not guarantee fixes, priority or deadlines.
+[Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost) · [About support](docs/SUPPORT.en.md)

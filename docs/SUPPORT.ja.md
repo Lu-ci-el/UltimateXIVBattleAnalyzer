@@ -1,27 +1,14 @@
-# 開発を支えてください
+# 開発支援について
 
-[トップへ](../README.md) · [English](SUPPORT.en.md)
+[ホーム](../README.md) · [English](SUPPORT.en.md)
 
-UXBAは、リプレイを整理したり、見返したい戦闘を取り出したり、共有前に匿名化したりするために作っています。
+UltimateXIVBattleAnalyzerは基本無料です。ただし、開発・ゲーム更新への追従・DATの追加解析には時間がかかり、支援がなければ継続は困難です。
 
-開発を継続するには支援が必要です。8.0への対応は支援次第です。
+フルリメイクを含む今後の開発や対応範囲は、全体の需要と支援状況を見て判断します。個別の支援額で対応を決めるものではありません。
 
-「便利だな」「これは必要だな」と思ったら、支援していただければと思います。
+- [Ko-fi](https://ko-fi.com/lost2)
+- [OFUSE](https://ofuse.me/lost)
 
-支援がなければ需要がなかったと判断し、開発を終了します。
+報告や質問に支援は必須ではありません。支援による修正・優先対応・復元成功・期限の保証はありません。
 
-- [Ko-fiで支援する](https://ko-fi.com/lost2)
-- [OFUSEで支援する](https://ofuse.me/lost)
-
-## 不具合・未対応DATへの対応
-
-調査・修正や未対応DATへの対応は、支援の状況と開発に充てられる時間によって変わります。  
-状況によっては、対応まで時間がかかったり、対応できなかったりする場合があります。
-
-報告・資料提供・質問に、支援は必須ではありません。  
-報告や支援をいただいても、修正・機能追加・優先対応・期限をお約束するものではありません。
-
-変換・抽出・匿名化がうまくいかなかった場合は、[Dropboxのファイル提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)へ元のDATを送ってください。UXBAのバージョン、行った操作、症状やエラー文を記したテキストも添えてください。Issueがある場合は、そのURLも記載してください。
-
-不具合はIssuesへ、使い方の質問や相談はDiscussionsへお願いします。  
-詳しくは[報告・ファイル提供の案内](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md#日本語)をご覧ください。
+不具合は[Issue](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose)、使い方の質問は[Discussions](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)へどうぞ。DATが必要な場合は[提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)をご利用ください。
