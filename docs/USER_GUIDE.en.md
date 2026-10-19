@@ -1,149 +1,168 @@
 # UltimateXIVBattleAnalyzer
 
-[Home](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer) · [日本語](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/docs/USER_GUIDE.ja.md)
+[Home](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer) · [English](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/docs/USER_GUIDE.en.md)
 
 ## Basics
 
-A Windows application for inspecting and organizing FFXIV replay DAT files. It works with recordings from instanced dungeons, trials, raids, and alliance raids. Some files cannot be loaded or processed, depending on their generation and recorded data.
+UltimateXIVBattleAnalyzer is a Windows application for loading, viewing, and organizing FFXIV replay DAT files. It supports recordings from dungeons, trials, raids, and alliance raids. Some files may not be readable or editable, depending on the DAT format generation and recording conditions.
 
-### Starting the app and loading a DAT
+### Launching the App and Loading a DAT
 
-1. Extract the entire distribution ZIP and run `UltimateXIVBattleAnalyzer.exe`.
-2. Use “Load DAT” to select a DAT or a ZIP containing one DAT.
-3. Review the recording details, player list, and battle list.
+1. Extract the entire distribution ZIP into a folder, then launch `UltimateXIVBattleAnalyzer.exe`.
+2. Click "Load DAT" and select a DAT file or a ZIP containing a single DAT file.
+3. Check the recording information, player list, and battle list.
 
-A 64-bit Windows environment is required. Keep the bundled dictionary and folders together. If prompted, install the [.NET Desktop Runtime for Windows x64](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/). Switch between Japanese and English at the top right.
+The app is intended for 64-bit Windows. Keep the bundled dictionary and folders in their original locations. If prompted at startup, install the [.NET Desktop Runtime (Windows x64)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/). You can switch between Japanese and English in the upper-right corner.
 
-### Displayed information
+### Information Displayed
 
-- Recorded date and time, clear status, and party composition
-- Playback/recorded duration, battle count, and DutyID
+- Date and time recorded in the DAT, clear status, and party composition
+- Playback time / recording time, number of battles, and Duty ID
 - Player list and battle list
 
-The date and time come from the DAT, not its filename. An anonymized DAT displays its modified date and character information.
+The date and time come from the data inside the DAT, not its filename. For anonymized DAT files, the displayed date, time, and character information reflect the modified data.
 
 ### Saving
 
-Configure the desired options and press “Save” to write a DAT or ZIP. With no battle selected, saving applies to the whole recording; with a battle selected, it extracts that interval. Selecting options alone does not change the original DAT. Keep your original and save processed results to a separate file.
+Configure the desired operations and click "Save" to export a DAT or ZIP. If no battle is selected, the entire recording is saved. If a battle row is selected, only that battle segment is saved. Simply changing the settings does not modify the original DAT. Keep a copy of the original DAT and save modified results as separate files.
 
-## DAT → ACT log search → official Split
+## DAT → ACT Log Search → Formal Split
 
-Find the ACT log corresponding to a recording and extract that encounter from a log containing multiple battles. This prepares a log for upload to FF Logs.
+Find the ACT log corresponding to a replay and extract only that battle from a log containing multiple fights. This prepares a log that can be uploaded to FF Logs.
 
-1. Choose “DAT → ACT log search → official Split” and select the original, non-anonymized DAT.
-2. Select your ACT log folder. Subfolders and supported log ZIPs are also searched.
+1. Click "DAT → ACT Log Search → Formal Split" and select the original DAT before anonymization.
+2. Select the ACT log folder. Subfolders and supported log ZIP files are also searched.
 3. If a matching log is found, choose an output location and extract it.
-4. Review the extracted log, then upload it using the FF Logs uploader.
+4. Review the extracted log and upload it using the FF Logs uploader.
 
-The original ACT log from the recording session is required. This feature does not generate an ACT log from a DAT. DAT anonymization does not anonymize ACT logs.
+You need the ACT log from when the replay was recorded. This feature does not generate a new ACT log from a DAT file. DAT anonymization is not applied to ACT logs.
 
-## Features under testing
+## Experimental Features
 
-The following editing features are experimental. Some DATs lack the required information, and bugs may occur. Check the saved result before using it.
+The following editing features are experimental. Some DAT files cannot be processed due to missing information, and bugs may occur. Check the saved results before using them.
 
-### Anonymization and appearance anonymization
+### Anonymization and Appearance Anonymization
 
-Anonymization replaces much of the identifying information about party members inside the DAT, including names, character IDs, and portraits. It also sets the recorded date and time to a fixed value.
+Anonymizes much of the personally identifying information about party members contained in the DAT, including names, character IDs, and portraits. The recording date and time are also set to a predetermined value.
 
-“Appearance anonymization” lets you choose race, gender, height, and several costumes. Hiding headgear assigns random hairstyles per character; male Roegadyn remain bald. Your selected costume also applies to equipment changes during the recording.
+"Appearance Anonymization" lets you choose race, gender, height, and several outfit options. When headgear is removed, a random hairstyle is assigned to each character.
 
-1. Open a modern DAT that has not yet been anonymized.
-2. Open “Appearance anonymization,” enable it, and choose the appearance settings. To anonymize without changing appearance, use the main window’s anonymization option.
-3. If needed, select a battle interval, recorder, and tail-cut option, then save to a separate file.
+*Male Roegadyn characters are always bald.*
 
-Anonymization transfers the original recorder’s context to the first person in the displayed party list and arranges that person at the top of the party list. Related information, such as marker placement, countdowns, and leadership, is transferred too. It does not exchange players’ jobs or their actions during the battle.
+1. Open a current-format DAT that has not been anonymized.
+2. Open "Appearance Anonymization," turn it ON, and configure the appearance. If you want to anonymize without changing appearances, use the anonymization option on the main screen.
+3. If needed, also select a battle segment, change the recorder, or enable the end-of-fight cut, then save to a separate file.
 
-In the distributed release, “Change recorder” is the only additional edit available for an already anonymized DAT. To redo appearance changes or battle extraction, start again from the original, non-anonymized DAT.
+During anonymization, the original recorder's information is transferred to the first person in the party list, and the list is arranged so that person appears at the top. Information associated with the original recorder, such as marker placement, countdowns, and party leader information, is also transferred. This feature does not swap individual players' combat movement or jobs.
 
-### Change recorder
+The only additional change supported on an already anonymized DAT is "Change Recorder." To change appearances or extract a battle segment again, start with the original DAT before anonymization.
 
-Enable “Change recorder,” select one person from the player list, and save. The selected party member becomes the recorder, local player, and party leader. This also works with an anonymized DAT received from someone else.
+### Change Recorder
 
-If a Splatoon script uses recorder or local-player checks, selecting the intended person is recommended. The local player is the character that scripts and similar features treat as “you.”
+Turn ON "Change Recorder," select a person from the player list, and save. The selected party member becomes the recorder, local player, and party leader. This also works with anonymized DAT files received from other people.
 
-When combined with anonymization, your selection takes priority for the recorder and party leader. Loading another DAT clears the selection, so choose again for each file.
+If a Splatoon script uses the recorder or local player to determine its behavior, we recommend selecting the intended character. The local player is the character that scripts and other systems refer to as "self."
 
-### Tail cut
+When used together with anonymization, the selected person takes priority as the recorder and party leader. The selection is cleared when another DAT is loaded, so set it again for each file.
 
-Enable tail cutting during anonymization to keep the recording only up to the point where the boss in the final applicable battle reaches or falls below the selected HP percentage. **The default is 10%; the range is 1–99%.** It works with cleared and uncleared recordings and can also apply to a selected battle interval.
+### End-of-Fight Cut
 
-The saved replay ends at that point and is saved as uncleared. It does not force anyone out of a live game instance. Because HP is recorded at intervals, the actual ending HP may be slightly below the selected percentage.
+When "End-of-Fight Cut" is enabled during anonymization, the final targeted battle is saved only up to the point where the boss's remaining HP falls to or below the specified percentage.
 
-Saving stops if the boss never reaches the requested HP or if the boss/HP cannot be identified. Removing the ending helps make it harder to match the recording to the original encounter using clear time, party DPS, and similar information.
+**The default is 10%, and the selectable range is 1–99%.**
 
-### Extract a battle interval
+It can be used with both cleared and uncleared recordings, and it can also be applied to a selected battle segment.
 
-1. Select the interval you want in the battle list.
-2. Press “Save” and review the confirmation.
+The saved replay ends at that point and is marked as uncleared. It does not force you to leave the duty in the actual game. Depending on the intervals between recorded HP updates, the boss's HP at the cut point may be slightly below the specified percentage.
+
+Saving is stopped if the boss never reaches the specified HP threshold or if the target boss or its HP cannot be identified.
+
+This feature shortens the end of the fight to make it harder to match the original battle using the clear time, party DPS, or similar information.
+
+### Battle Segment Extraction
+
+1. Select the segment you want to extract from the battle list.
+2. Click "Save" and review the confirmation screen.
 3. Choose the output location and DAT or ZIP format.
 
-The app uses starting information, such as countdowns, to identify an interval’s beginning and end. Files with insufficient information or unsupported content cannot be extracted.
+Only segments whose start and end can be identified using information such as countdowns are supported. Extraction may not be possible for DAT files with insufficient information or unsupported duties.
 
-Long starting/preparation intervals are shortened so that the wait before combat is at most 30 seconds. Preparation of 30 seconds or less is preserved. Extraction is complex, and playback issues may occur even when saving succeeds.
+If the pre-fight preparation period is long, the waiting time before the fight is shortened to a maximum of 30 seconds in the extracted replay. If it is 30 seconds or less, it is preserved as-is. Because this is a complex operation, playback issues may occur even when saving succeeds.
 
-For a past-generation DAT, first use “Past → Modern” if supported. To extract and anonymize together, enable both operations on the original, non-anonymized DAT before saving.
+For older DAT files, use "Old → Current" first if conversion is supported. To combine extraction and anonymization, configure both operations on the original, non-anonymized DAT and save the result.
 
-### Change character ID
+### Change Character ID
 
-Use this when someone other than the original recorder plays a non-anonymized DAT. Party-list entries may be missing when another person plays it. Referencing character information from your own DAT helps align the display.
+Use this when someone other than the original recorder wants to play back a DAT that has not been anonymized. When another person plays the recording, entries may be missing from the party list. This feature uses character information from one of your own DAT files to make the display match.
 
-1. Load the DAT you want to modify and choose “Change character ID.”
-2. Select a reference DAT recorded with your own character.
-3. Save to a separate file.
+1. Open the DAT you want to modify and click "Change Character ID".
+2. Select a DAT recorded with your own character as the reference.
+3. Save the result as a separate file.
 
-This is separate from anonymization. Do not confuse the reference DAT with the DAT being modified.
+This is separate from anonymization. Be careful not to mix up the reference DAT and the DAT you want to modify.
 
-### Past → Modern
+### Old → Current
 
-Restore supported older replay DATs from the 7.0x era onward into a supported modern format. Choose “Past → Modern,” select a DAT or DAT ZIP, and follow the saving prompts. Conversion alone does not anonymize the recording.
+Restores older replay DAT files from version 7.0x onward to a supported current format. Select a DAT or a ZIP containing a DAT using "Old → Current" and follow the on-screen instructions to save it. Conversion alone does not anonymize the file.
 
-Not every DAT can be restored. Support depends on the content and structures that have been checked and analyzed. If restoration fails, send the old DAT through the [DAT submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif), preferably with a modern DAT from the same content. The old DAT alone may be enough, but a modern example helps with comparison.
+Not every DAT can be restored. Support is limited to formats and duties that have been examined and analyzed.
 
-Adding support requires analysis. Continued work and coverage depend on overall demand and support, rather than an individual donation amount. Restoration or a response deadline cannot be guaranteed.
+If a file cannot be converted, submit the older DAT through the [DAT submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif), along with a current DAT from the same duty if possible. An older DAT alone may be enough, but a current DAT helps with comparison.
 
-For multiple files, use the batch conversion option and choose separate input and output folders. Subfolders are included and their structure is preserved. Unsupported files, files that do not need conversion, and files whose output already exists are skipped with reasons shown. Completed outputs remain if you cancel.
+Supporting additional cases requires analysis. Continued development and the range of supported files depend on overall demand and support. A particular donation amount does not guarantee conversion for an individual file or a specific completion date.
 
-**After a game update, wait for a distribution that supports the new game environment before using Past → Modern or anonymization.**
+For batch processing, select "Batch Convert Old Replays" and choose separate input and output folders. Subfolders are processed, and the original folder structure is preserved. Unsupported files, files that do not need conversion, and files with an existing output of the same name are skipped with a reason shown. Outputs completed before cancellation are retained.
+
+**After a game update, please wait for a compatible release before using Old → Current conversion or anonymization.**
 
 ### Full Remake
 
-This feature is under development and is unavailable in the distributed release.
+This feature is under development and is not available in the current public release.
 
-## Individual ZIP compression
+## Individual ZIP Compression
 
-Choose “Individual ZIP compression,” then separate input and output folders, to compress supported older DATs into individual ZIPs organized by generation and content.
+Select "Individual ZIP Compression" and choose separate input and output folders to compress supported older DAT files into individual ZIP files, organized by format generation and duty.
 
-The original DATs are retained. Modern DATs are excluded. Identical ZIPs are skipped; if the same name has different contents, a separate name is used. ZIP compression alone does not anonymize or modernize a DAT.
+The original DAT files are preserved. Current-format DAT files are excluded. ZIP creation is skipped if an identical ZIP already exists; if the filename is the same but the contents differ, the result is saved under a different name. ZIP compression alone does not anonymize or convert a DAT to the current format.
 
-## Filename markers
+## Saved Filename Prefixes
 
-Applied operations add markers at the beginning of the output filename.
+Depending on the operations performed, an indicator is added to the beginning of the saved filename.
 
-| Example | Meaning |
-| --- | --- |
-| `Miqo(M)`, `S`/`M`/`L`, `RB`, etc. | Race/gender, height, and costume |
-| `Head(on)` / `Head(off)` | Headgear shown / hidden |
-| `Anon` | Anonymization |
-| `Recorder-T1 Trial`, etc. | Recorder change; T1 and similar labels identify the selected player’s role |
-| `Split3`, etc. | Extracted interval number |
-| `Split` | Tail cutting without selecting an interval |
+| Example prefix | Meaning |
+|---|---|
+| `Miqo(M)`, `S` / `M` / `L`, `RB`, etc. | Race/gender, height, outfit |
+| `Head(on)` / `Head(off)` | Headgear on/off |
+| `Anonymass` | Anonymization |
+| `Recorder-T1 Trial`, etc. | Recorder change; T1 and similar labels indicate the selected character's role |
+| `Split3`, etc. | Extracted segment number |
 
-## Before sharing
+## Before Sharing
 
-Anonymization does not guarantee complete anonymity. If the same encounter is public on FF Logs or elsewhere, action order, timestamps, and battle duration may allow it to be matched. Check for public logs of the same encounter before publishing or sharing a replay.
+**Anonymization does not guarantee complete anonymity.**
+
+If a recording of the same battle is available on FF Logs or similar services, it may be possible to match the replay using the sequence of actions, timestamps, battle duration, or other information.
+
+Before publishing or sharing a DAT, check whether a log of the same battle has been made public.
 
 ## Troubleshooting
 
-If the app does not start, check that you extracted the entire ZIP and installed the required runtimes. For dictionary errors, extract the full distribution again, including its bundled files.
+If the app will not launch, make sure you extracted the entire ZIP and installed the required runtimes.
 
-When [reporting a bug](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose), include the app version you are using, your steps, symptoms, and error message. If a DAT is needed, use the [submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif) instead of attaching the original DAT directly to a public issue.
+If you encounter a dictionary error, extract the distribution again with all bundled files.
 
-## Development and support
+When using the [bug report form](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose), describe the steps you took, the symptoms, and any error messages. If a DAT file is needed, use the [submission form](https://www.dropbox.com/request/gkofh48datowq9uozjif); do not attach original DAT files directly to public GitHub issues.
 
-The app is generally free, but continued development is difficult without financial support. Future work, including Full Remake and additional analysis, depends on overall demand and support.
+## Development and Support
 
-The source code is private to protect the anonymization approach. If you are uncomfortable using the app, please do not use it. Use it only if you are comfortable doing so.
+The app is provided free of charge, but continued development is difficult without financial support. Future development and the range of supported features, including Full Remake and additional analysis, will depend on overall demand and support.
 
-[Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost) · [Usage questions](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)
+*Note: The update count is the number of version updates...*
 
-Support is not required to report a problem or ask a question. Donations do not guarantee a fix, priority, or deadline.
+The source code is not public in order to protect the anonymization mechanism. If you have concerns about using the app, please refrain from using it. Use it only if you are comfortable doing so.
+
+[Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost) · [Questions about Using the App](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)
+
+Donations are not required to report bugs or ask questions. Donations do not guarantee fixes, priority handling, or completion deadlines.
+
+Feel free to use it.
