@@ -9,6 +9,7 @@ A Windows app for inspecting and organizing FFXIV replay DAT files from dungeons
 - Display recorded date/time, clear status, party composition, durations, DutyID, players, and battles
 - Find matching ACT logs and extract encounters for upload to FF Logs
 - Anonymize identities and appearance, change the recorder, and cut the ending at a chosen boss HP percentage
+- Remove player and pet actions and select jobs within the same role
 - Extract battle intervals, change character IDs, and convert supported older DATs individually or in batches
 - Compress older DATs into individual ZIPs and organize them
 

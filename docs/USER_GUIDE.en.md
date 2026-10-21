@@ -1,6 +1,6 @@
 # UltimateXIVBattleAnalyzer
 
-[Home](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer) · [English](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/docs/USER_GUIDE.en.md)
+[Home](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer) · [日本語](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/docs/USER_GUIDE.ja.md)
 
 ## Basics
 
@@ -24,7 +24,7 @@ The date and time come from the data inside the DAT, not its filename. For anony
 
 ### Saving
 
-Configure the desired operations and click "Save" to export a DAT or ZIP. If no battle is selected, the entire recording is saved. If a battle row is selected, only that battle segment is saved. Simply changing the settings does not modify the original DAT. Keep a copy of the original DAT and save modified results as separate files.
+Configure the desired operations and click "Save" to export a DAT or ZIP. If no battle is selected, the entire recording is saved. If a battle row is selected, only that battle segment is saved. Progress is displayed while anonymization or action removal is running. Use the cancel button in the progress area to stop the operation. Simply changing the settings does not modify the original DAT. Keep a copy of the original DAT and save modified results as separate files.
 
 ## DAT → ACT Log Search → Formal Split
 
@@ -45,17 +45,33 @@ The following editing features are experimental. Some DAT files cannot be proces
 
 Anonymizes much of the personally identifying information about party members contained in the DAT, including names, character IDs, and portraits. The recording date and time are also set to a predetermined value.
 
+Displayed damage and healing amounts are set to zero after anonymization. Recorded HP changes, deaths, revivals, and movement are retained.
+
 "Appearance Anonymization" lets you choose race, gender, height, and several outfit options. When headgear is removed, a random hairstyle is assigned to each character.
 
 *Male Roegadyn characters are always bald.*
 
 1. Open a current-format DAT that has not been anonymized.
-2. Open "Appearance Anonymization," turn it ON, and configure the appearance. If you want to anonymize without changing appearances, use the anonymization option on the main screen.
+2. Open "Appearance Anonymization," turn it ON, and choose the race, gender, height, outfit, and headgear setting.
 3. If needed, also select a battle segment, change the recorder, or enable the end-of-fight cut, then save to a separate file.
 
-During anonymization, the original recorder's information is transferred to the first person in the party list, and the list is arranged so that person appears at the top. Information associated with the original recorder, such as marker placement, countdowns, and party leader information, is also transferred. This feature does not swap individual players' combat movement or jobs.
+During anonymization, the original recorder's information is transferred to the first person in the party list, and the list is arranged so that person appears at the top. Information associated with the original recorder, such as marker placement, countdowns, and party leader information, is also transferred. Individual players keep their recorded movement. To change jobs, use "Remove all player actions / same-role jobs."
 
 The only additional change supported on an already anonymized DAT is "Change Recorder." To change appearances or extract a battle segment again, start with the original DAT before anonymization.
+
+### Remove All Player Actions / Same-Role Jobs
+
+Remove player and pet actions, casts, and friendly job effects while retaining movement and enemy attacks for reviewing the encounter.
+
+1. Open a current-format DAT that has not been anonymized, then enable "Remove all player actions / same-role jobs."
+2. Choose the desired job for each character in the player list. Available choices stay within that character's role.
+3. If needed, also configure appearance anonymization, the recorder, the battle segment, or "Cut ending," then save to a separate file.
+
+You can leave the jobs unchanged and use action removal on its own. The party display order and labels such as T1 and D1 update to match the selected jobs.
+
+This option also removes friendly buff, shield, and jump displays, and shows MP at its maximum. Movement, knockback, HP changes, deaths, and revivals are retained.
+
+**Action removal alone does not anonymize the DAT.** Enable "Appearance Anonymization" as well when sharing an anonymized replay. Configure the options again after loading another DAT.
 
 ### Change Recorder
 
@@ -67,11 +83,13 @@ When used together with anonymization, the selected person takes priority as the
 
 ### End-of-Fight Cut
 
-When "End-of-Fight Cut" is enabled during anonymization, the final targeted battle is saved only up to the point where the boss's remaining HP falls to or below the specified percentage.
+Enable "Cut ending" together with anonymization or "Remove all player actions / same-role jobs" to save the final targeted battle only up to the point where the boss's remaining HP falls to or below the specified percentage.
 
-**The default is 10%, and the selectable range is 1–99%.**
+**The default is 10%, and the selectable range is 0–99%.**
 
 It can be used with both cleared and uncleared recordings, and it can also be applied to a selected battle segment.
+
+At 0%, the replay is retained through the recorded point where the boss's HP reaches zero.
 
 The saved replay ends at that point and is marked as uncleared. It does not force you to leave the duty in the actual game. Depending on the intervals between recorded HP updates, the boss's HP at the cut point may be slightly below the specified percentage.
 
@@ -87,7 +105,7 @@ This feature shortens the end of the fight to make it harder to match the origin
 
 Only segments whose start and end can be identified using information such as countdowns are supported. Extraction may not be possible for DAT files with insufficient information or unsupported duties.
 
-If the pre-fight preparation period is long, the waiting time before the fight is shortened to a maximum of 30 seconds in the extracted replay. If it is 30 seconds or less, it is preserved as-is. Because this is a complex operation, playback issues may occur even when saving succeeds.
+If the pre-fight preparation period is long, the waiting time before the fight is shortened to a maximum of 5 seconds in the extracted replay. If it is 5 seconds or less, it is preserved as-is. Because this is a complex operation, playback issues may occur even when saving succeeds.
 
 For older DAT files, use "Old → Current" first if conversion is supported. To combine extraction and anonymization, configure both operations on the original, non-anonymized DAT and save the result.
 
@@ -115,6 +133,16 @@ For batch processing, select "Batch Convert Old Replays" and choose separate inp
 
 **After a game update, please wait for a compatible release before using Old → Current conversion or anonymization.**
 
+### Contingency Update
+
+This optional feature is available from "Contingency update" when regular dictionary updates are unavailable.
+
+1. Choose "Prepare from dictionary" and select the FFXIV executable matching the current dictionary.
+2. After a game update, choose "Update from new EXE" and select the newer FFXIV executable.
+3. Enable "Use contingency data for generations absent from the registered dictionary," then reload the DAT.
+
+If a change cannot be supported, the update stops and retains the previous data. This feature does not support every game update.
+
 ### Full Remake
 
 This feature is under development and is not available in the current public release.
@@ -131,11 +159,16 @@ Depending on the operations performed, an indicator is added to the beginning of
 
 | Example prefix | Meaning |
 |---|---|
-| `Miqo(M)`, `S` / `M` / `L`, `RB`, etc. | Race/gender, height, outfit |
-| `Head(on)` / `Head(off)` | Headgear on/off |
-| `Anonymass` | Anonymization |
-| `Recorder-T1 Trial`, etc. | Recorder change; T1 and similar labels indicate the selected character's role |
-| `Split3`, etc. | Extracted segment number |
+| `La(M)` / `Miqo(M)`, `S` / `M` / `L`, `PH` / `RB`, etc. | Race/gender, height, outfit |
+| `Hd_on` / `Hd_off` | Headgear on/off |
+| `Anon` | Anonymization |
+| `Re-T1` / `Re-D4`, etc. | Recorder change; T1 and D4 indicate the selected character's role |
+| `NA` | Action removal and same-role job selection |
+| `Sp3`, etc. | Extracted segment number |
+
+Example: `Re-D4 NA La(M) S PH Hd_on Sp10 Anon.dat`
+
+ZIP output uses the same naming format with the `.zip` extension.
 
 ## Before Sharing
 
