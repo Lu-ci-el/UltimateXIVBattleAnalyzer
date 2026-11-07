@@ -31,6 +31,8 @@ FFXIV Patch 7.58 is scheduled for November 10, 2026. I hope to release a compati
 
 I built UXBA as a hobby and have covered its running costs myself. In my experience, more people want to see someone else’s replay than are willing to share their own, even after their recording has been anonymized. That leaves fewer opportunities to use these tools, and I’m unsure how many people need this much replay editing.
 
+I hoped that making a replay with a striking scene or an interesting camera angle in Full Remake might make someone think, “I’d like to share mine, too.”
+
 The running costs are high. I can keep updating UXBA beyond 7.58 if contributions cover those costs, but I can’t keep paying for it on my own.
 
 [Support development on Ko-fi](https://ko-fi.com/lost2)
