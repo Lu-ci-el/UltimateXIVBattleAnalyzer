@@ -29,7 +29,7 @@ Only recorder changes are available for an already anonymized DAT. Anonymization
 
 FFXIV Patch 7.58 is scheduled for November 10, 2026. I hope to release a compatible version of UXBA if I can. [Official FFXIV announcement](https://na.finalfantasyxiv.com/lodestone/topics/detail/5c3b0f9e2fa2295dfc32c19e02e57e4e0614a09c)
 
-I built UXBA as a hobby and have covered its running costs myself. In my experience, more people want to see someone else’s replay than are willing to share their own, even anonymously. That leaves fewer opportunities to use these tools, and I’m unsure how many people need this much replay editing.
+I built UXBA as a hobby and have covered its running costs myself. In my experience, more people want to see someone else’s replay than are willing to share their own, even after their recording has been anonymized. That leaves fewer opportunities to use these tools, and I’m unsure how many people need this much replay editing.
 
 The running costs are high. I can keep updating UXBA beyond 7.58 if contributions cover those costs, but I can’t keep paying for it on my own.
 

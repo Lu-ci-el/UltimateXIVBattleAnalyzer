@@ -53,14 +53,12 @@ Anonymizes much of the personally identifying information about party members co
 
 Displayed damage and healing amounts are set to zero after anonymization. Recorded HP changes, deaths, revivals, and movement are retained.
 
-The outfit settings let you choose weapons and armor independently for the party. Player copies now use the original player’s headgear visibility setting.
+The outfit settings let you choose weapons and armor independently for the party.
 
 - **For a weapon series**, turn on “Change weapons,” type a name in the weapon field and select a result. Search `Ultimate` for seven reward series, including Ultima. Use `ZW`, `AW`, `EW`, `RW`, `MW` or `FW` to find relic upgrade stages. Phantom Weapons also accept `PW`. If a party member has no weapon in a series, the result shows which job is missing.
 - **For matching armor**, choose “Other” and select a dyeable series. “Job-specific outfit” offers undyed job sets at the 50, 60, 70, 79, 89 and 99 bands. If a job has no set at the selected band, it uses its lowest available set.
 - **To match the weapon to the outfit**, turn on “Use job-specific weapons.” If the equipped set has no matching weapon, UXBA picks one for that job. A weapon series you select takes priority.
 - **To randomize each player**, enable the option for random race, gender and height. It also varies face, hairstyle, hair color and highlights. Each player keeps the same appearance throughout the saved DAT.
-
-The settings window stays the same size when you change outfits or search for equipment. Scroll within it to reach the remaining options.
 
 1. Open a current-format DAT that has not been anonymized.
 2. Open "Appearance Anonymization," turn it ON, and choose the race, gender, height, outfit, and headgear setting.
