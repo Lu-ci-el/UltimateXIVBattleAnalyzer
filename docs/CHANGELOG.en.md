@@ -3,7 +3,7 @@
 ## 3.8.2.6 (changes since 3.7.9.8)
 
 - **Enemy Timeline** shows casts, hit timing, targets and boss HP in order. Choose a start and end to save a replay DAT of that scene or export the event list as CSV or JSON.
-- **Appearance Anonymization** lets you choose weapon and armor series independently for the party. Search for `Ultimate` to find seven reward series, including Ultima. Search by relic family (ZW, AW, EW, RW, MW or FW) to choose an upgrade stage. You can also select job-specific armor or randomize each player’s race, face and hair color. Player copies now use the original player’s headgear visibility setting. The settings window stays the same size and scrolls as needed.
+- **Appearance Anonymization** lets you choose weapon and armor series independently for the party. Search for `Ultimate` to find seven reward series, including Ultima. Search by relic family (ZW, AW, EW, RW, MW or FW) to choose an upgrade stage. You can also select job-specific armor or randomize each player’s race, face and hair color.
 - **Full Remake** lets you edit individual party members’ appearances and equipment and save the changes in a replay DAT.
 - **Party role labels** can be swapped for T1/T2, H1/H2 and D1/D2. The recorder’s filename uses the chosen label. Tank job choices keep the two players in their original job-priority order.
 
