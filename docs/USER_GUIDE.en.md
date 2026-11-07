@@ -37,9 +37,15 @@ Find the ACT log corresponding to a replay and extract only that battle from a l
 
 You need the ACT log from when the replay was recorded. This feature does not generate a new ACT log from a DAT file. DAT anonymization is not applied to ACT logs.
 
-## Experimental Features
+## Enemy Timeline
 
-The following editing features are experimental. Some DAT files cannot be processed due to missing information, and bugs may occur. Check the saved results before using them.
+Open a DAT and choose “敵技タイムライン” (Enemy Timeline) to see casts, hit timing, targets and boss HP in battle order. You can search by action name or target.
+
+1. Select the first and last events you want to keep, then set them as the start and end. You can also enter times in seconds and add a margin on either side.
+2. Choose “Save selected range as DAT” to export the selected scene.
+3. Choose CSV or JSON to save the list of events instead.
+
+## Editing replays
 
 ### Anonymization and Appearance Anonymization
 
@@ -47,9 +53,14 @@ Anonymizes much of the personally identifying information about party members co
 
 Displayed damage and healing amounts are set to zero after anonymization. Recorded HP changes, deaths, revivals, and movement are retained.
 
-"Appearance Anonymization" lets you choose race, gender, height, and several outfit options. When headgear is removed, a random hairstyle is assigned to each character.
+The outfit settings let you choose weapons and armor independently for the party. Player copies now use the original player’s headgear visibility setting.
 
-*Male Roegadyn characters are always bald.*
+- **For a weapon series**, turn on “Change weapons,” type a name in the weapon field and select a result. Search `Ultimate` for seven reward series, including Ultima. Use `ZW`, `AW`, `EW`, `RW`, `MW` or `FW` to find relic upgrade stages. Phantom Weapons also accept `PW`. If a party member has no weapon in a series, the result shows which job is missing.
+- **For matching armor**, choose “Other” and select a dyeable series. “Job-specific outfit” offers undyed job sets at the 50, 60, 70, 79, 89 and 99 bands. If a job has no set at the selected band, it uses its lowest available set.
+- **To match the weapon to the outfit**, turn on “Use job-specific weapons.” If the equipped set has no matching weapon, UXBA picks one for that job. A weapon series you select takes priority.
+- **To randomize each player**, enable the option for random race, gender and height. It also varies face, hairstyle, hair color and highlights. Each player keeps the same appearance throughout the saved DAT.
+
+The settings window stays the same size when you change outfits or search for equipment. Scroll within it to reach the remaining options.
 
 1. Open a current-format DAT that has not been anonymized.
 2. Open "Appearance Anonymization," turn it ON, and choose the race, gender, height, outfit, and headgear setting.
@@ -72,6 +83,8 @@ You can leave the jobs unchanged and use action removal on its own. The party di
 This option also removes friendly buff, shield, and jump displays, and shows MP at its maximum. Movement, knockback, HP changes, deaths, and revivals are retained.
 
 **Action removal alone does not anonymize the DAT.** Enable "Appearance Anonymization" as well when sharing an anonymized replay. Configure the options again after loading another DAT.
+
+The party list has T1 ↔ T2, H1 ↔ H2 and D1 ↔ D2 controls for swapping role labels. Players keep their positions, and the recorder’s filename uses the chosen label. Tank job changes preserve the original pair’s priority order across Paladin, Warrior, Dark Knight and Gunbreaker.
 
 ### Change Recorder
 
@@ -145,7 +158,11 @@ If a change cannot be supported, the update stops and retains the previous data.
 
 ### Full Remake
 
-This feature is under development and is not available in the current public release.
+Open a current-format DAT that has not been anonymized and choose “Full Remake.”
+
+1. Enable Full Remake and select the party member you want to edit.
+2. Change that player’s appearance or equipment and save the player settings. Repeat for any other members you want to edit.
+3. Click “Save” in the main window to write the changes to a replay DAT.
 
 ## Individual ZIP Compression
 
@@ -160,6 +177,7 @@ Depending on the operations performed, an indicator is added to the beginning of
 | Example prefix | Meaning |
 |---|---|
 | `La(M)` / `Miqo(M)`, `S` / `M` / `L`, `PH` / `RB`, etc. | Race/gender, height, outfit |
+| `Rnd` / `AF99`, etc. | Per-player random appearance / selected job armor band |
 | `Hd_on` / `Hd_off` | Headgear on/off |
 | `Anon` | Anonymization |
 | `Re-T1` / `Re-D4`, etc. | Recorder change; T1 and D4 indicate the selected character's role |
@@ -188,9 +206,7 @@ When using the [bug report form](https://github.com/Lu-ci-el/UltimateXIVBattleAn
 
 ## Development and Support
 
-The app is provided free of charge, but continued development is difficult without financial support. Future development and the range of supported features, including Full Remake and additional analysis, will depend on overall demand and support.
-
-*Note: The update count is the number of version updates...*
+UXBA is a free hobby project. See the [developer’s note](../README.en.md#future-updates) for plans for 7.58 and the support needed for future updates.
 
 The source code is not public in order to protect the anonymization mechanism. If you have concerns about using the app, please refrain from using it. Use it only if you are comfortable doing so.
 

@@ -50,11 +50,7 @@ Dropboxアカウントがなくても提出できます。
 報告・資料提供・質問に、支援は必須ではありません。  
 また、報告や資料提供、支援をいただいても、修正・機能追加・優先対応・期限をお約束するものではありません。
 
-開発を継続するには支援が必要です。8.0への対応は支援次第です。
-
-「便利だな」「これは必要だな」と思ったら、支援していただければと思います。
-
-支援がなければ需要がなかったと判断し、開発を終了します。
+7.58対応版はできれば作成する予定です。その後の更新を続けるには、維持費をまかなう支援が必要です。[今後の更新について](../README.md#今後の更新について)
 
 - [Ko-fi](https://ko-fi.com/lost2)
 - [OFUSE](https://ofuse.me/lost)
@@ -106,11 +102,7 @@ Depending on those resources, a response may take time, or a problem may remain 
 Donations are not required to report a problem, contribute evidence, or ask a question.  
 Reports, contributed files, and donations do not guarantee a fix, a new feature, priority, or a deadline.
 
-Continued development needs your support. Support for 8.0 will depend on contributions.
-
-If you find UXBA useful or feel it is something you need, please consider supporting its development.
-
-Without support, I will take that as a sign that there is no demand and end development.
+I hope to release a version for 7.58. Updates beyond that point depend on contributions covering the running costs. [Future updates](../README.en.md#future-updates)
 
 - [Ko-fi](https://ko-fi.com/lost2)
 - [OFUSE](https://ofuse.me/lost)

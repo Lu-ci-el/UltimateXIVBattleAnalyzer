@@ -2,9 +2,7 @@
 
 [Home](../README.en.md) · [日本語](SUPPORT.ja.md)
 
-UltimateXIVBattleAnalyzer is generally free. Development, adapting to game updates, and analyzing additional DATs take time, and continuing is difficult without support.
-
-Future work and coverage, including Full Remake, depend on overall demand and support. Decisions are not based on an individual donation amount.
+UXBA is a free hobby project. I’ve covered the running costs myself so far. I hope to release a version for FFXIV 7.58. Updates beyond that point depend on contributions covering those costs. [Future updates](../README.en.md#future-updates)
 
 - [Ko-fi](https://ko-fi.com/lost2)
 - [OFUSE](https://ofuse.me/lost)
