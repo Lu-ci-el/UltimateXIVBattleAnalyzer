@@ -1,26 +1,12 @@
-# 開発を支えてください
+# 開発支援について
 
-[トップへ](../README.md) · [English](SUPPORT.en.md)
+[ホーム](../README.md) · [English](SUPPORT.en.md)
 
-UXBAは、リプレイを整理したり、見返したい戦闘を取り出したり、共有前に匿名化したりするために作っています。
+UXBAは趣味で作り、無料で提供しています。ここまで維持費は自分で負担してきました。できればFFXIV 7.58対応版を出したいと思っています。その後も更新を続けるには、維持費をまかなう支援が必要です。[今後の更新について](../README.md#今後の更新について)
 
-開発には継続的な費用がかかり、ゲームの更新に合わせた調整や、世代ごとのデータ確認にも時間が必要です。  
-自費で更新を続けられる見込みは2026年12月までです。  
-2027年1月以降の更新や8.0対応、開発中のフルリメイクをどこまで進められるかは、皆さんからの支援にかかっています。
+- [Ko-fi](https://ko-fi.com/lost2)
+- [OFUSE](https://ofuse.me/lost)
 
-使って便利だと感じたら、無理のない範囲で応援してもらえると助かります。  
-応援のメッセージも励みになります。
+報告や質問に支援は必須ではありません。支援による修正・優先対応・復元成功・期限の保証はありません。
 
-- [Ko-fiで支援する](https://ko-fi.com/lost2)
-- [OFUSEで支援する](https://ofuse.me/lost)
-
-## 不具合・未対応DATへの対応
-
-調査・修正や未対応DATへの対応は、支援の状況と開発に充てられる時間によって変わります。  
-状況によっては、対応まで時間がかかったり、対応できなかったりする場合があります。
-
-報告・資料提供・質問に、支援は必須ではありません。  
-報告や支援をいただいても、修正・機能追加・優先対応・期限をお約束するものではありません。
-
-不具合はIssuesへ、使い方の質問や相談はDiscussionsへお願いします。  
-詳しくは[報告・ファイル提供の案内](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md#日本語)をご覧ください。
+不具合は[Issue](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose)、使い方の質問は[Discussions](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)へどうぞ。DATが必要な場合は[提出窓口](https://www.dropbox.com/request/gkofh48datowq9uozjif)をご利用ください。
