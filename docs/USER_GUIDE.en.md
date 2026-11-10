@@ -140,9 +140,9 @@ If a file cannot be converted, submit the older DAT through the [DAT submission 
 
 Supporting additional cases requires analysis. Continued development and the range of supported files depend on overall demand and support. A particular donation amount does not guarantee conversion for an individual file or a specific completion date.
 
-For batch processing, select "Batch Convert Old Replays" and choose separate input and output folders. Subfolders are processed, and the original folder structure is preserved. Unsupported files, files that do not need conversion, and files with an existing output of the same name are skipped with a reason shown. Outputs completed before cancellation are retained.
+For batch processing, select "Batch Convert Old Replays" and choose separate input and output folders. For ZIP archives containing several DATs, extract each archive into its own subfolder and select their parent folder as the input. Subfolders are processed, and the original folder structure is preserved. Unsupported files, files that do not need conversion, and files with an existing output of the same name are skipped with a reason shown. Outputs completed before cancellation are retained.
 
-**After a game update, please wait for a compatible release before using Old → Current conversion or anonymization.**
+**After a game update, use a compatible release for anonymization. Old → Current can also use a conversion verified by Contingency Update, as described below.**
 
 ### Contingency Update
 
@@ -151,6 +151,7 @@ This optional feature is available from "Contingency update" when regular dictio
 1. Choose "Prepare from dictionary" and select the FFXIV executable matching the current dictionary.
 2. After a game update, choose "Update from new EXE" and select the newer FFXIV executable.
 3. Enable "Use contingency data for generations absent from the registered dictionary," then reload the DAT.
+4. Use “Old → Current” to save a separate file. Starting with 3.8.2.9, it uses the build of the newly selected executable when the contingency data can verify the conversion. With the bundled 7.58 dictionary, you can convert to 7.58 directly.
 
 If a change cannot be supported, the update stops and retains the previous data. This feature does not support every game update.
 
@@ -204,7 +205,7 @@ When using the [bug report form](https://github.com/Lu-ci-el/UltimateXIVBattleAn
 
 ## Development and Support
 
-UXBA is a free hobby project. See the [developer’s note](../README.en.md#future-updates) for plans for 7.58 and the support needed for future updates.
+UXBA is a free hobby project. See the [developer’s note](../README.en.md#future-updates) for the 7.58 update and the support needed for future updates.
 
 The source code is not public in order to protect the anonymization mechanism. If you have concerns about using the app, please refrain from using it. Use it only if you are comfortable doing so.
 
@@ -213,3 +214,5 @@ The source code is not public in order to protect the anonymization mechanism. I
 Donations are not required to report bugs or ask questions. Donations do not guarantee fixes, priority handling, or completion deadlines.
 
 Feel free to use it.
+
+[Anonymized replay forum](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions/2)
