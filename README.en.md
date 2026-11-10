@@ -1,88 +1,57 @@
 # UltimateXIVBattleAnalyzer
 
-[Download 3.7.4.5](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.4.5) · [Release notes](docs/CHANGELOG.en.md)
+[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.6) · [User guide](docs/USER_GUIDE.en.md)
 
-[日本語](README.md) · [Illustrated guide](docs/USER_GUIDE.en.md) · [Support development](docs/SUPPORT.en.md)
+A Windows app for FFXIV replay DAT files. Inspect battles and party composition, extract a battle, anonymize a replay for sharing, change its recorder, and find the ACT logs that match a recording.
 
-A Windows app for working with FFXIV replay DAT files: inspect battles and party composition, extract a battle, anonymize a replay, and find the ACT logs that match a recording.
-
-![UXBA main screen](docs/images/main-en.jpg)
-
-## What you can do
-
-- **Read replay DATs**  
-  Open recordings from supported generations.  
-  View duty information, battles, timings, and party composition.
-
-- **Find and split ACT logs**  
-  Choose a DAT and the folder containing your ACT logs.  
-  Extract the matching logs for upload to FF Logs.
-
-- **Anonymize names**  
-  Replace names in modern DATs with aliases such as `Player 01`.  
-  Character identifiers, home-world information, and the internal recording date are also changed for sharing.
-
-- **Full anonymization**  
-  Change appearance as well as names and identifiers.  
-  Select race, gender, height, and outfit in the anonymization settings.
-
-- **Extract a battle**  
-  Select an extractable battle in the list.  
-  Save that battle as a separate DAT or ZIP.
-
-- **Past → Modern conversion**  
-  Convert supported older DATs to the modern generation handled by the app.  
-  Availability depends on the recording generation.
-
-- **Change character ID**  
-  Use your own DAT as a reference to change the character ID in another replay.  
-  This can improve party-list presentation, such as missing entries.
-
-- **Individual ZIP compression**  
-  Archive supported older DATs as one ZIP per recording in a separate folder.  
-  The original DATs are kept.
-
-Full Remake is in development.  
-Further work depends on support for the project.
+![Main screen](docs/images/main-en.png)
 
 ## Getting started
 
-1. Download the application ZIP from Releases and extract the whole folder.
-
-2. Run `UltimateXIVBattleAnalyzer.exe`.
-
+1. Download the application ZIP from the [release page](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/tag/v3.7.5.6).
+2. Extract the entire folder and run `UltimateXIVBattleAnalyzer.exe`.
 3. Choose **Load DAT** and select a recording.
+4. Inspect the battle list, choose the operation you need, and save to a separate file.
 
-4. Inspect its battles, then extract, anonymize, or save as needed.
+For 64-bit Windows 10 or 11. If required at startup, install the [.NET 8 Desktop Runtime for Windows x64](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/). Keep the app with all its included folders. The required dictionary is included.
 
-If required at startup, install the [.NET 8 Desktop Runtime for Windows x64](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) and [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/).  
-Keep the app together with its included files.
+## Features
 
-The [illustrated guide](docs/USER_GUIDE.en.md) covers each workflow.  
-Anonymization cannot guarantee that nobody can recognize a player: movement, tactics, and party composition may still offer clues.  
-Anonymizing a DAT does not anonymize ACT logs.
+| Feature | What it does |
+| --- | --- |
+| Inspect a DAT | Display recording information, party members, and battles from a supported DAT or ZIP containing one DAT. |
+| Extract a battle | Save a selected battle as a separate DAT or ZIP. |
+| Anonymize names | Change names, character identifiers, home-world information, and the internal recording date for sharing. |
+| Full anonymization | Also change appearance, including race, gender, height, and outfit. |
+| Change recorder | Select a party member as the recorder and save. This also works with an anonymized DAT. |
+| Past → Modern | Convert supported older DATs to the modern generation supported by the app. |
+| Batch Past → Modern | Convert supported DATs in a selected folder and its subfolders to a separate output folder. |
+| Extract ACT logs | Match an original DAT with existing ACT logs and extract the relevant portion. |
+| Individual ZIP compression | Archive supported older DATs as one ZIP per recording, keeping the originals. |
 
-## Bugs and questions
+Anonymized names inside the DAT use full English job names such as `Paladin`. The app displays labels such as `Player 01` to distinguish people, including members with the same job.
 
-Use [bug reports](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose) for reproducible bugs or unsupported DATs, and [Discussions](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions) for questions or feature ideas.  
-Please include the app version, steps, expected behavior, actual behavior, and the exact error text.  
-Hide names, servers, recording dates, and personal folder names in screenshots.  
-Do not attach DATs or ACT logs to public posts.  
-There is currently no private inbox for original DATs, so please start by reporting symptoms and error messages.  
-See the [reporting and file sharing guide](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md#english) for details.
+When you open an anonymized DAT, **changing the recorder is the only permitted editing operation**. Extract battles and choose appearance settings before anonymizing the original DAT. Keep the original if you may want to make different edits later.
 
-Investigation, fixes, and support for additional DAT formats depend on funding and available development time.  
-Some problems may remain unresolved, but a donation is not required to report a problem or ask a question.  
-Reports and donations do not guarantee a fix, priority, or a deadline.
+Availability depends on the recording generation and contents. Names that cannot be resolved appear as Player numbers. A person cannot be selected as recorder when the required identity information is missing. Successful conversion or extraction does not guarantee identical playback for every replay. Check the saved result before sharing it. Full Remake is in development.
 
-## Help keep development going
+## Help and feedback
 
-Development and testing are expensive to sustain.  
-I can fund updates myself through December 2026.  
-Updates from January 2027 onward, including 8.0 support, will depend on contributions from people who find the app useful.  
-If it helps you, please consider supporting it at a level that works for you.
+- [English user guide](docs/USER_GUIDE.en.md)
+- [日本語操作ガイド](docs/USER_GUIDE.ja.md)
+- [Report a bug](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/issues/new/choose)
+- [Questions and discussions](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions)
 
-[Support on Ko-fi](https://ko-fi.com/lost2) · [Support on OFUSE](https://ofuse.me/lost)
+Include the app version, steps, expected result, actual result, and exact error text. Hide names, servers, dates, and personal paths in screenshots. Do not attach DATs or ACT logs to public posts. See the [reporting and file sharing guide](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/blob/main/.github/SUPPORT.md#english).
 
-The app is distributed through Releases.  
-This repository contains documentation and download information; it does not include the application's source code.
+Anonymization cannot guarantee that nobody can recognize a player: party composition, movement, and tactics can still offer clues. Anonymizing a DAT does not anonymize ACT logs.
+
+## Support development
+
+Development and testing cost time and money. I can fund updates myself through December 2026. Updates from January 2027 onward, including 8.0 support, will depend on contributions from people who find the app useful. If it helps you, please consider supporting it at a level that works for you.
+
+[Ko-fi](https://ko-fi.com/lost2) · [OFUSE](https://ofuse.me/lost) · [About supporting development](docs/SUPPORT.en.md)
+
+A donation is not required to report a problem or ask a question. Reports and donations do not guarantee a fix, priority, or a deadline.
+
+The application is distributed through Releases. This repository contains documentation and download information.

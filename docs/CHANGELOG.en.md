@@ -1,13 +1,9 @@
-# Release notes
+# Public release
 
-## 3.7.4.5
+[Home](../README.en.md) · [User guide](USER_GUIDE.en.md) · [日本語](CHANGELOG.ja.md)
 
-- Fixed issues with settings, save locations, and dictionary loading.
+## 3.7.5.6 — Initial public release
 
-## 3.7.4.3
+Inspect DATs, extract battles, anonymize replays, change the recorder, convert supported generations, extract matching ACT logs, and archive recordings as individual ZIPs. See the [user guide](USER_GUIDE.en.md) for setup and saving instructions.
 
-- Includes the fix for restoring enemy and encounter-object spawn/despawn states when extracting later battle intervals.
-- Anonymization changes supported home-world information as well as names and character identifiers for sharing.
-
-Close the app before updating, then extract the new ZIP into a separate folder.  
-Keep all bundled folders together and retain your original DATs.
+For a first installation, extract the entire download ZIP into a new folder. Keep original DATs and save processed results separately.
