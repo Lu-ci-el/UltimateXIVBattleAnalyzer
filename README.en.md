@@ -27,7 +27,7 @@ Only recorder changes are available for an already anonymized DAT. Anonymization
 
 ## Future updates
 
-UXBA 3.8.2.9 supports FFXIV patch 7.58. An Ultimate replay recorded on 7.51h2 and previously converted to 7.57h played in game on patch 7.58. We tested it with the fix applied to 3.8.2.7, using the old dictionary and Contingency Update. Version 3.8.2.9 produced identical game replay data for the same file.
+UXBA 3.8.2.9 supports FFXIV patch 7.58. With the 7.57h dictionary and Contingency Update, older replays can be converted for playback on 7.58.
 
 This approach may work again for a similarly small patch. I expect a major update like 8.0 to require more work than Contingency Update can handle on its own.
 
