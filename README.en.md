@@ -1,6 +1,6 @@
 # UltimateXIVBattleAnalyzer
 
-[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/latest) · [English user guide](docs/USER_GUIDE.en.md) · [Changes since 3.7.9.8](docs/CHANGELOG.en.md)
+[日本語](README.md) · [Download](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/releases/latest) · [English user guide](docs/USER_GUIDE.en.md) · [Release history](docs/CHANGELOG.en.md) · [Anonymized replay forum](https://github.com/Lu-ci-el/UltimateXIVBattleAnalyzer/discussions/2)
 
 A Windows app for inspecting and organizing FFXIV replay DAT files from dungeons, trials, raids, and alliance raids.
 
@@ -23,17 +23,19 @@ A Windows app for inspecting and organizing FFXIV replay DAT files from dungeons
 
 Keep the bundled dictionary and folders together. See the [English user guide](docs/USER_GUIDE.en.md) for setup, supported conditions, and instructions.
 
-Only recorder changes are available for an already anonymized DAT. Anonymization does not guarantee complete anonymity. Before sharing, check whether logs of the same encounter are public on FF Logs or elsewhere. After game updates, wait for a distribution supporting Past → Modern and anonymization in the new environment.
+Only recorder changes are available for an already anonymized DAT. Anonymization does not guarantee complete anonymity. Before sharing, check whether logs of the same encounter are public on FF Logs or elsewhere. After a game update, use a compatible distribution for anonymization. Old → Current is also available when Contingency Update can verify the conversion.
 
 ## Future updates
 
-FFXIV Patch 7.58 is scheduled for November 10, 2026. I hope to release a compatible version of UXBA if I can. [Official FFXIV announcement](https://na.finalfantasyxiv.com/lodestone/topics/detail/5c3b0f9e2fa2295dfc32c19e02e57e4e0614a09c)
+UXBA 3.8.2.9 supports FFXIV patch 7.58. An Ultimate replay recorded on 7.51h2 and previously converted to 7.57h played in game on patch 7.58. We tested it with the fix applied to 3.8.2.7, using the old dictionary and Contingency Update. Version 3.8.2.9 produced identical game replay data for the same file.
+
+This approach may work again for a similarly small patch. I expect a major update like 8.0 to require more work than Contingency Update can handle on its own.
 
 I built UXBA as a hobby and have covered its running costs myself. In my experience, more people want to see someone else’s replay than are willing to share their own, even after their recording has been anonymized. That leaves fewer opportunities to use these tools, and I’m unsure how many people need this much replay editing.
 
 I hoped that making a replay with a striking scene or an interesting camera angle in Full Remake might make someone think, “I’d like to share mine, too.”
 
-The running costs are high. I can keep updating UXBA beyond 7.58 if contributions cover those costs, but I can’t keep paying for it on my own.
+Thank you to the two people who have supported development. Contributions have dried up lately, and sometimes I wonder how many people still need UXBA. I can’t keep covering the costs on my own. I’m sorry to say this may be the last update. If you’d like to keep using UXBA through future patches, please consider supporting its development.
 
 [Support development on Ko-fi](https://ko-fi.com/lost2)
 

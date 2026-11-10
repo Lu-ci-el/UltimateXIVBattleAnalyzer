@@ -1,5 +1,10 @@
 # Release information
 
+## 3.8.2.9 (FFXIV patch 7.58)
+
+- The distribution now includes the 7.58 dictionary.
+- With an older dictionary, Old → Current now uses the game build selected by Contingency Update. An Ultimate replay converted from 7.57h to 7.58 played in game.
+
 ## 3.8.2.7 (changes since 3.7.9.8)
 
 - **Enemy Timeline** shows casts, hit timing, targets and boss HP in order. Choose a start and end to save a replay DAT of that scene or export the event list as CSV or JSON.

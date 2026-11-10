@@ -2,7 +2,7 @@
 
 [Home](../README.en.md) · [日本語](SUPPORT.ja.md)
 
-UXBA is a free hobby project. I’ve covered the running costs myself so far. I hope to release a version for FFXIV 7.58. Updates beyond that point depend on contributions covering those costs. [Future updates](../README.en.md#future-updates)
+UXBA is a free hobby project. I’ve covered the running costs myself so far. Version 3.8.2.9 supports FFXIV patch 7.58. Updates beyond that point depend on contributions covering those costs. [Future updates](../README.en.md#future-updates)
 
 - [Ko-fi](https://ko-fi.com/lost2)
 - [OFUSE](https://ofuse.me/lost)
